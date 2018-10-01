@@ -3325,3 +3325,12 @@ input, select, textarea {
 .upcoming-game h4{
 	margin: 0 !important;
 }
+
+.add-cal{
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.add-cal i{
+	padding-right: 5px;
+}
