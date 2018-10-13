@@ -2,6 +2,7 @@ var game = [
     {
         type:"footage",
         game_date:"OCT 12, 2018",
+        game_num: 3,
         game_team:"Halifax Prep",
         game_location:"Halifax, NS",
         game_pic:"images/GAME3.png",
@@ -9,6 +10,7 @@ var game = [
     },
     {
         type:"footage",
+        game_num: 2,
         game_date:"SEP 28, 2018",
         game_team:"Lee Academy",
         game_location:"Lee Academy, MA",
@@ -17,6 +19,7 @@ var game = [
     },
     {
         type:"footage",
+        game_num: 1,
         game_date:"SEP 20, 2018",
         game_team:"Prince Edward Island",
         game_location:"Rothesay Netherwood School, NB",
