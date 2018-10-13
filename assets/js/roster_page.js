@@ -1,5 +1,4 @@
-function detectmob() { 
-    if( navigator.userAgent.match(/Android/i)
+if( navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
     || navigator.userAgent.match(/iPhone/i)
     || navigator.userAgent.match(/iPad/i)
@@ -12,4 +11,3 @@ function detectmob() {
     else {
        return false;
      }
-   }
