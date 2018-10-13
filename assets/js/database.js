@@ -44,7 +44,7 @@ var menu = [
         type:"menu", title:"GAME FOTTAGE", link:"fottage_page.html"
     },
     {
-        type:"menu", title:"OUR TEAM", link:"https://rns.myschoolapp.com/ftpimages/467/download/download_2620896.pdf"
+        type:"menu", title:"OUR TEAM", link:"roster.html"
     }
 ]
 
