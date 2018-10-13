@@ -1,10 +1,6 @@
-if( navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)
-    ){
-       window.location.href = "https://rns.myschoolapp.com/ftpimages/467/download/download_2620896.pdf";
-     }
+var menu = fuse2.search("menu");
+for (var i = 0; i<menu.length; i++){
+    var current_html = $(".menu_list").html();
+    var new_html = current_html + '<li><a href="'+menu[i].link+'">'+menu[i].title+'</a></li>'
+    $(".menu_list").html(new_html);
+}
