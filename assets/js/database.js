@@ -44,7 +44,7 @@ var menu = [
         type:"menu",title:"ABOUT",link:"about.html"
     },
     {
-        type:"menu", title:"GAME FOTTAGE", link:"fottage_page.html"
+        type:"menu", title:"GAME FOOTAGE", link:"fottage_page.html"
     },
     {
         type:"menu", title:"OUR TEAM", link:"roster.html"
