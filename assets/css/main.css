@@ -3334,3 +3334,5 @@ input, select, textarea {
 .add-cal i{
 	padding-right: 5px;
 }
+
+.pdfobject-container { height: 100rem; }
