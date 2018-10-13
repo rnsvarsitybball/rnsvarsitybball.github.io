@@ -8,6 +8,3 @@ if( navigator.userAgent.match(/Android/i)
     ){
        window.location.href = "https://rns.myschoolapp.com/ftpimages/467/download/download_2620896.pdf";
      }
-    else {
-       return false;
-     }
