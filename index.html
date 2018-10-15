@@ -88,7 +88,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js"></script>
 			<script src="assets/js/database.js"></script>
 			<script src="assets/js/custom.js"></script>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<!-- Global site tadg (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127454641-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -97,6 +97,21 @@
 
   gtag('config', 'UA-127454641-1');
 </script>
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//donaldzou.com/analytics/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 
 
 	</body>
