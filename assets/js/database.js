@@ -1,6 +1,15 @@
 var game = [
     {
         type:"footage",
+        game_date:"OCT 16, 2018",
+        game_num: 4,
+        game_team:"Friendly",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME4.png",
+        game_link:"https://drive.google.com/drive/folders/1H2h10Y72C9UIOv7EBYAJ5nQeQbVieAqd?usp=sharing"
+    },
+    {
+        type:"footage",
         game_date:"OCT 12, 2018",
         game_num: 3,
         game_team:"Halifax Prep",
