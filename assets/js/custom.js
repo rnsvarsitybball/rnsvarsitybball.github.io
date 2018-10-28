@@ -19,3 +19,9 @@ for (var i = 0; i<menu.length; i++){
     var new_html = current_html + '<li><a href="'+menu[i].link+'">'+menu[i].title+'</a></li>'
     $(".menu_list").html(new_html);
 }
+
+
+var ct = new Date().getTime();
+var cdt = new Date("Oct 25, 2019 16:00:00");
+
+

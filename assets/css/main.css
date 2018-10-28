@@ -3336,3 +3336,8 @@ input, select, textarea {
 }
 
 .pdfobject-container { height: 50rem; }
+
+.countdownjum{
+	background-image: url("https://cdn3.sportngin.com/attachments/photo/f0c1-112290799/east_session_large.jpg");
+	background-attachment: fixed;
+}
