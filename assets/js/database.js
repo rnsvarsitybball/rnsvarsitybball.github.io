@@ -1,6 +1,42 @@
 var game = [
     {
         type:"footage",
+        game_date:"OCT 28, 2018",
+        game_num: 8,
+        game_team:"Toronto Basketball Academy",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/GVdhY7rac7Y"
+    },
+    {
+        type:"footage",
+        game_date:"OCT 27, 2018",
+        game_num: 7,
+        game_team:"GTA Prep",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/WaluBDbq3mE"
+    },
+    {
+        type:"footage",
+        game_date:"OCT 26, 2018",
+        game_num: 6,
+        game_team:"Crestwood",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/zIyELDnHuE0"
+    },
+    {
+        type:"footage",
+        game_date:"OCT 25, 2018",
+        game_num: 5,
+        game_team:"B.E.A.S.T. Prep",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/WCkwH_WrhuA"
+    },
+    {
+        type:"footage",
         game_date:"OCT 16, 2018",
         game_num: 4,
         game_team:"Friendly",
