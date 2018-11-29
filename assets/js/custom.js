@@ -8,9 +8,9 @@ for (var i = 0; i<3; i++){
 
 var date_result = fuse1.search("schedule");
 for (var b = 0; b < date_result.length; b++){
-    var current_html = $(".upcoming-game").html();
-    var new_html = current_html + '<h3>VS. '+date_result[b].game_team+'</h3><h4>'+date_result[b].game_date+'</h4><h4>'+date_result[b].game_location+'</h4>';
-    $(".upcoming-game").html(new_html);
+    var current_html = $(".ug").html();
+    var new_html = current_html + '<div class="upcoming-game"><h3>VS. '+date_result[b].game_team+'</h3><h4>'+date_result[b].game_date+'</h4><h4>'+date_result[b].game_location+'</h4></div>';
+    $(".ug").html(new_html);
 }
 
 var menu = fuse2.search("menu");

@@ -123,6 +123,12 @@ var date = [
         game_date:"NOV.30, 2018 - 9:00AM EST",
         game_team:"EDGE SCHOOL",
         game_location:"NOTRE DAME HIGH SCHOOL, ON"
+    },
+    {
+        type:"schedule",
+        game_date:"DEC1, 2018 - 9:00AM EST",
+        game_team:"OAKVILLE BASKETBALL PREP",
+        game_location:"NOTRE DAME HIGH SCHOOL, ON"
     }
 ]
 
