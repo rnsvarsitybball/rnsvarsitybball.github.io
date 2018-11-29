@@ -120,9 +120,9 @@ var game = [
 var date = [
     {
         type:"schedule",
-        game_date:"OCTOBER 25-28, 2018",
-        game_team:"NPA SESSION #1",
-        game_location:"Rothesay Netherwood School, NB, CA"
+        game_date:"NOV.30, 2018 - 9:00AM EST",
+        game_team:"EDGE SCHOOL",
+        game_location:"NOTRE DAME HIGH SCHOOL, ON"
     }
 ]
 
