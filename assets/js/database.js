@@ -1,6 +1,51 @@
 var game = [
     {
         type:"footage",
+        game_date:"NOV 28, 2018",
+        game_num: 13,
+        game_team:"LONDON BASKETBALL ACADEMY",
+        game_location:"Notre Dame High School, ON",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/Z30-fFhW1HQ"
+    },
+    {
+        type:"footage",
+        game_date:"NOV 25, 2018",
+        game_num: 12,
+        game_team:"Bernice MacNaughton High School",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME6.png",
+        game_link:"https://youtu.be/beUIGJgv_r4"
+    },
+    {
+        type:"footage",
+        game_date:"NOV 24, 2018",
+        game_num: 11,
+        game_team:"Charles P. Allen High School",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME6.png",
+        game_link:"https://youtu.be/CHDNe9PPBW8"
+    },
+    {
+        type:"footage",
+        game_date:"NOV 24, 2018",
+        game_num: 10,
+        game_team:"Kennebecasis Valley High School",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME6.png",
+        game_link:"https://youtu.be/aL0NGIT0J8o"
+    },
+    {
+        type:"footage",
+        game_date:"NOV 23, 2018",
+        game_num: 9,
+        game_team:"Fredericton High School",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME6.png",
+        game_link:"https://youtu.be/XvY_F6yEGy0"
+    },
+    {
+        type:"footage",
         game_date:"OCT 28, 2018",
         game_num: 8,
         game_team:"Toronto Basketball Academy",
