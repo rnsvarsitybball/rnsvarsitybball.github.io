@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Overpass:300,700,900");
 
 /*
 	Phantom by HTML5 UP
@@ -117,9 +117,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family:'Overpass', sans-serif;;
 		font-size: 16pt;
-		font-weight: 300;
+		font-weight: 200;
 		line-height: 1.75;
 	}
 
@@ -2213,7 +2213,7 @@ input, select, textarea {
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
-			font-weight: 300;
+			font-weight: 200;
 			padding-left: 2.55em;
 			padding-right: 0.75em;
 			position: relative;
@@ -3349,6 +3349,7 @@ input, select, textarea {
 
 .carousel{
 	padding-bottom: 20px;
+	width: 100%;
 }
 
 .carousel img{
@@ -3370,7 +3371,8 @@ h1.alert-heading{
 .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
+	padding-top: 56.25%;
+	border-radius: 3px;
 }
 .resp-iframe {
     position: absolute;
@@ -3380,4 +3382,9 @@ h1.alert-heading{
     height: 100%;
 	border: 0;
 	border-radius: 3px;
+	padding-bottom: 20px;
+}
+
+.countdown-title{
+	margin-bottom:10px;
 }
