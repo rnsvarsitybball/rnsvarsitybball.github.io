@@ -1,6 +1,15 @@
 var game = [
     {
         type:"footage",
+        game_date:"NOV 29, 2018",
+        game_num: 14,
+        game_team:"B.E.A.S.T PREP",
+        game_location:"Notre Dame High School, ON",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/j9Byr-cwJH4"
+    },
+    {
+        type:"footage",
         game_date:"NOV 28, 2018",
         game_num: 13,
         game_team:"LONDON BASKETBALL ACADEMY",
@@ -118,12 +127,6 @@ var game = [
     }
 ];
 var date = [
-    {
-        type:"schedule",
-        game_date:"NOV.30, 2018 - 9:00AM EST",
-        game_team:"EDGE SCHOOL",
-        game_location:"NOTRE DAME HIGH SCHOOL, ON"
-    },
     {
         type:"schedule",
         game_date:"DEC1, 2018 - 9:00AM EST",

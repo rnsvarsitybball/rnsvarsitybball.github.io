@@ -3304,6 +3304,7 @@ input, select, textarea {
 
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
+				text-align: center
 			}
 
 		}
@@ -3387,4 +3388,8 @@ h1.alert-heading{
 
 .countdown-title{
 	margin-bottom:10px;
+}
+
+.alert-npa h4{
+	margin-bottom: 10px;
 }
