@@ -1,12 +1,23 @@
 var game = [
     {
         type:"footage",
+        game_date:"NOV 30, 2018",
+        game_num: 15,
+        game_team:"EDGE SCHOOL",
+        game_location:"Notre Dame High School, ON",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/j9Byr-cwJH4",
+        game_score:"WIN/ 96 - 85"
+    },
+    {
+        type:"footage",
         game_date:"NOV 29, 2018",
         game_num: 14,
         game_team:"B.E.A.S.T PREP",
         game_location:"Notre Dame High School, ON",
         game_pic:"images/GAME5.png",
-        game_link:"https://youtu.be/j9Byr-cwJH4"
+        game_link:"https://youtu.be/j9Byr-cwJH4",
+        game_score:"WIN/ 95 - 71"
     },
     {
         type:"footage",
@@ -15,7 +26,8 @@ var game = [
         game_team:"LONDON BASKETBALL ACADEMY",
         game_location:"Notre Dame High School, ON",
         game_pic:"images/GAME5.png",
-        game_link:"https://youtu.be/Z30-fFhW1HQ"
+        game_link:"https://youtu.be/Z30-fFhW1HQ",
+        game_score:"WIN/ 87 - 57"
     },
     {
         type:"footage",
@@ -127,12 +139,12 @@ var game = [
     }
 ];
 var date = [
-    {
-        type:"schedule",
-        game_date:"DEC1, 2018 - 9:00AM EST",
-        game_team:"OAKVILLE BASKETBALL PREP",
-        game_location:"NOTRE DAME HIGH SCHOOL, ON"
-    }
+    //{
+    //    type:"schedule",
+    //    game_date:"DEC1, 2018 - 9:00AM EST",
+    //    game_team:"OAKVILLE BASKETBALL PREP",
+    //    game_location:"NOTRE DAME HIGH SCHOOL, ON"
+    //}
 ]
 
 var menu = [
