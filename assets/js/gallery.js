@@ -5,13 +5,13 @@ var a = 0;
         a++;
         if (a > 3){
             var current = $(".gal").html();
-            var new_html = current + '<div class="w-100"></div><div class="col-sm"><img src="images/'+photo[i]+'"></div>';
+            var new_html = current + '<div class="w-100"></div><div class="col-sm wow fadeInUp data-wow-delay="1s""><img src="images/'+photo[i]+'"></div>';
             $(".gal").html(new_html);
             a = 1;
         }
         else{
             var current = $(".gal").html();
-            var new_html = current + '<div class="col-sm"><img src="images/'+photo[i]+'"></div>';
+            var new_html = current + '<div class="col-sm wow fadeInUp" data-wow-delay="0.5s"><img src="images/'+photo[i]+'"></div>';
             $(".gal").html(new_html);
         }
     }
