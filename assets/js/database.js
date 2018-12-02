@@ -2,6 +2,16 @@ var game = [
     {
         type:"footage",
         game_date:"NOV 30, 2018",
+        game_num: 16,
+        game_team:"Oakville Basketball Prep",
+        game_location:"Notre Dame High School, ON",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/fgnHEpMxrWM",
+        game_score:"WIN/ 96 - 74"
+    },
+    {
+        type:"footage",
+        game_date:"NOV 30, 2018",
         game_num: 15,
         game_team:"EDGE SCHOOL",
         game_location:"Notre Dame High School, ON",
@@ -152,6 +162,9 @@ var menu = [
         type:"menu",title:"HOME",link:"/"
     },
     {
+        type:"menu", title:"GALLERY", link:"gallery.html"
+    },
+    {
         type:"menu",title:"ABOUT",link:"about.html"
     },
     {
@@ -159,9 +172,11 @@ var menu = [
     },
     {
         type:"menu", title:"OUR TEAM", link:"roster.html"
-    }
+    },
+    
 ]
 
+var photo = ["slide_1.jpg","slide_2.jpg","slide_3.jpg","slide_4.jpg","slide_5.jpg","1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
 
 
 

@@ -3397,3 +3397,33 @@ h1.alert-heading{
 .score{
 	margin-bottom: 10px;
 }
+
+.gal img{
+	width: 100%;
+}
+
+.gal .col-sm{
+	padding: 0 3px;
+	margin-bottom: -3px;
+}
+
+
+
+.gal{
+	margin: 30px;
+}
+
+@media screen and (max-width: 736px){
+	.gallery .col-sm{
+		margin-bottom: 1rem;
+	}
+}
+
+.galbody{
+	background-color: #151515;
+	color: white;
+}
+
+#header nav ul li a{
+	background-color: transparent;
+}
