@@ -176,7 +176,7 @@ var menu = [
     
 ]
 
-var photo = ["slide_1.jpg","slide_2.jpg","slide_3.jpg","slide_4.jpg","slide_5.jpg","1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
+var photo = ["slide_1.JPG","slide_2.JPG","slide_3.JPG","slide_4.JPG","slide_5.JPG","1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg"]
 
 
 
