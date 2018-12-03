@@ -3400,6 +3400,7 @@ h1.alert-heading{
 
 .gal img{
 	width: 100%;
+	cursor:pointer;
 }
 
 .gal .col-sm{
@@ -3426,4 +3427,43 @@ h1.alert-heading{
 
 #header nav ul li a{
 	background-color: transparent;
+}
+
+#loadmore{
+	margin-top: 1rem;
+	text-align: center
+}
+
+.loadbut{
+	text-align: center;
+}
+
+.modalpic{
+	width: 80%;
+}
+
+.modal-content{
+	background-color:transparent;
+	border: none; 
+}
+.modal-header{
+	border:none;
+}
+.close{
+	text-shadow: none;
+	box-shadow: none;
+	opacity: 1;
+	color:white !important;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+	max-width: 80%;
+	max-height: 100%;
+	text-align: center;
+}}
+
+.modal{
+	z-index:10000;
+	background-color: #0000008f;
 }
