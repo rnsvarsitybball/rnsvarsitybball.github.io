@@ -3437,7 +3437,11 @@ h1.alert-heading{
 .loadbut{
 	text-align: center;
 }
-
+@media (min-width: 576px){
+.modalpic{
+	width: 80%;
+}
+}
 .modalpic{
 	width: 80%;
 }
@@ -3462,6 +3466,11 @@ h1.alert-heading{
 	max-height: 100%;
 	text-align: center;
 }}
+
+.modal{
+	text-align: center;
+	
+}
 
 .modal{
 	z-index:10000;
