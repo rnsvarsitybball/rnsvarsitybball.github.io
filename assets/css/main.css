@@ -3458,7 +3458,7 @@ h1.alert-heading{
 
 @media (min-width: 576px){
 .modal-dialog {
-	max-width: 80%;
+	max-width: 60%;
 	max-height: 100%;
 	text-align: center;
 }}
