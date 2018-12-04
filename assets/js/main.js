@@ -233,6 +233,7 @@ $(document).ready(function(){
 		$("body").css("animation-duration", "1500ms !important");
 		$("body").addClass("animated fadeOutDown");
 		setTimeout(function(){
+			$("body").addClass("animated fadeIn");
 			window.location = href;
 		},500);
 	});
@@ -243,6 +244,7 @@ $(document).ready(function(){
 	$("body").addClass("animated fadeOutRight");
 	
 		setTimeout(function(){
+			$("body").addClass("animated fadeIn");
 		 window.location = href;
 	},1700);
 	   });
