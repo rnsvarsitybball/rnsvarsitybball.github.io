@@ -230,8 +230,8 @@ $(document).ready(function(){
 	$('#main a').click(function(e) {
 		e.preventDefault();
 		href = $(this).attr('href');
-		$("body").css("animation-duration", "1000ms !important");
-		$("body").addClass("animated zoomOut");
+		$("body").css("animation-duration", "1500ms !important");
+		$("body").addClass("animated fadeOutDown");
 		setTimeout(function(){
 			window.location = href;
 		},500);
