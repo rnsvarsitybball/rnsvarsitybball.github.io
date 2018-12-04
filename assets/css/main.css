@@ -3396,6 +3396,14 @@ h1.alert-heading{
 	margin-bottom: 10px;
 }
 
+.alert-npa img{
+	width: 100%;
+}
+
+.alert-npa h2{
+	margin-bottom: 0.5rem;
+}
+
 .score{
 	margin-bottom: 10px;
 }
@@ -3548,7 +3556,7 @@ h1.alert-heading{
 	100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
   }
   @-o-keyframes pace-spinner {
-	0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+	0% { -o-transform: rotate(0deg); transform: rotate(0deg); }				
 	100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
   }
   @-ms-keyframes pace-spinner {

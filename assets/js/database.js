@@ -149,12 +149,18 @@ var game = [
     }
 ];
 var date = [
-    //{
-    //    type:"schedule",
-    //    game_date:"DEC1, 2018 - 9:00AM EST",
-    //    game_team:"OAKVILLE BASKETBALL PREP",
-    //    game_location:"NOTRE DAME HIGH SCHOOL, ON"
-    //}
+    {
+        type:"schedule",
+        game_date:"DEC 14-16, 2018",
+        game_team:"Rick Cotter Classic",
+        game_location:"FHS High School, NB"
+    },
+    {
+        type:"schedule",
+        game_date:"JAN 11-13, 2019",
+        game_team:"Riverboat Classic",
+        game_location:"KV High School, NB"
+    }
 ]
 
 var menu = [

@@ -9,7 +9,7 @@ for (var i = 0; i<3; i++){
 var date_result = fuse1.search("schedule");
 for (var b = 0; b < date_result.length; b++){
     var current_html = $(".ug").html();
-    var new_html = current_html + '<div class="upcoming-game"><h3>VS. '+date_result[b].game_team+'</h3><h4>'+date_result[b].game_date+'</h4><h4>'+date_result[b].game_location+'</h4></div>';
+    var new_html = current_html + '<div class="upcoming-game"><h3><i class="fas fa-basketball-ball"></i>'+date_result[b].game_team+'</h3><h4>'+date_result[b].game_date+'</h4><h4>'+date_result[b].game_location+'</h4></div>';
     $(".ug").html(new_html);
 }
 
