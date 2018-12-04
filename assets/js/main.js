@@ -232,7 +232,7 @@ $(document).ready(function(){
 		$("body").addClass("animated zoomOut");
 		setTimeout(function(){
 			window.location = href;
-		},1100);
+		},500);
 	});
 	$('#menu .inner a').click(function(f) {
 		f.preventDefault();
