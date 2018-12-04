@@ -186,3 +186,68 @@
 
 
 
+
+
+var mode = Cookies.get('mode');
+			if (mode== 'night'){
+				$("body").css('color', 'white');
+				$("body").css('background-color', '#0E0E0E');
+				$("#footer").css("background-color", "#1a1a1a");
+				Cookies.set('mode', 'night');
+				$(".mode_select").text("DAY");
+			}
+			if (mode== undefined){
+				Cookies.set('mode', 'day');
+				$(".mode_select").text("DAY");
+			}
+			if (mode == 'day'){
+				Cookies.set('mode', 'day');
+				$(".mode_select").text("NIGHT");
+			}
+			
+				$(".mode_select").click(function(){
+					var current_mode = Cookies.get('mode');
+					if (current_mode == 'day'){
+					  $("body").css('color', 'white');
+					  $("body").css('background-color', '#0E0E0E');
+					  Cookies.set('mode', 'night');
+					  $(".mode_select").text("DAY");
+					  $("#footer").css("background-color", "#1a1a1a");
+					}
+					if (current_mode == 'night'){
+					  $("body").css('color', '#585858');
+					  $("body").css('background-color', 'white');
+					  Cookies.set('mode', 'day');
+					  $(".mode_select").text("NIGHT");
+					  $("#footer").css("background-color", "#f6f6f6");
+					}
+				});
+
+
+$(document).ready(function(){
+	$('#main a').click(function(e) {
+		e.preventDefault();
+		href = $(this).attr('href');
+		$("body").css("animation-duration", "1000ms !important");
+		$("body").addClass("animated zoomOut");
+		setTimeout(function(){
+			window.location = href;
+		},1250);
+	});
+	$('#menu .inner a').click(function(f) {
+		f.preventDefault();
+		href = $(this).attr('href');
+		$("body").css("animation-duration", "500ms");
+	$("body").addClass("animated fadeOutRight");
+	
+		setTimeout(function(){
+		 window.location = href;
+	},1700);
+	   });
+
+})
+
+
+
+
+				  

@@ -1,20 +1,25 @@
 var a = 0;
 
 var num = 34;
-var b = 0
+var b = 0;
+var k = 0.3;
 
     for(var i=0; i<=num; i++){
         a++;
         b++;
+        k = k+0.5;
+        if (k > 1.4){
+            k=0.3;
+        }
         if (a > 3){
             var current = $(".gal").html();
-            var new_html = current + '<div class="w-100"></div><div class="col-sm wow fadeInUp data-wow-delay="1s""><img src="images/'+b+'.jpg"></div>';
+            var new_html = current + '<div class="w-100"></div><div class="col-sm wow fadeInUp" data-wow-delay="'+k+'s"><img src="images/'+b+'.jpg"></div>';
             $(".gal").html(new_html);
             a = 1;
         }
         else{
             var current = $(".gal").html();
-            var new_html = current + '<div class="col-sm wow fadeInUp" data-wow-delay="0.5s"><img src="images/'+b+'.jpg"></div>';
+            var new_html = current + '<div class="col-sm wow fadeInUp" data-wow-delay="'+k+'s"><img src="images/'+b+'.jpg"></div>';
             $(".gal").html(new_html);
         }
     }
