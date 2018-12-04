@@ -225,6 +225,8 @@ var mode = Cookies.get('mode');
 
 
 $(document).ready(function(){
+	
+
 	$('#main a').click(function(e) {
 		e.preventDefault();
 		href = $(this).attr('href');
@@ -247,6 +249,13 @@ $(document).ready(function(){
 
 })
 
+$(window).on('load', function() {
+	setTimeout(function(){
+		$("body").css("opacity", "1");
+	},100)
+	
+	
+   });
 
 
 
