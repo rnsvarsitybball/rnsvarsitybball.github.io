@@ -3431,8 +3431,8 @@ h1.alert-heading{
 }
 
 .galbody{
-	background-color: #151515;
-	color: white;
+	background-color: #151515 !important;
+	color: white !important;
 }
 
 #header nav ul li a{
