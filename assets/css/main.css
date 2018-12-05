@@ -3568,3 +3568,34 @@ h1.alert-heading{
 	100% { transform: rotate(360deg); transform: rotate(360deg); }
   }
   
+.alert-npa img{
+	border-radius: 3px;
+}
+
+
+.game-alert-dark-mode{
+	color: #ffffff;
+    background-color: #cce5ff1f;
+    border-color: #b8daff;
+}
+
+.game-alert-dark-mode .upcoming-game{
+	background-color: #f6f6f60f;
+}
+
+.notification-dark-mode{
+	color: #ffffff;
+    background-color: #d4edda1c;
+    border-color: #c3e6cb;
+}
+.notification-dark-mode a{
+	color: rgb(219, 219, 219);
+}
+
+.alert{
+	transition: all 0.3s ease-in-out;
+}
+
+.galleryfooter{
+	background-color: rgb(26, 26, 26) !important;
+}

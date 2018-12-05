@@ -190,36 +190,24 @@
 
 var mode = Cookies.get('mode');
 			if (mode== 'night'){
-				$("body").css('color', 'white');
-				$("body").css('background-color', '#0E0E0E');
-				$("#footer").css("background-color", "#1a1a1a");
-				Cookies.set('mode', 'night');
-				$(".mode_select").text("DAY");
+				night();
 			}
 			if (mode== undefined){
 				Cookies.set('mode', 'day');
-				$(".mode_select").text("DAY");
+				day();
 			}
 			if (mode == 'day'){
 				Cookies.set('mode', 'day');
-				$(".mode_select").text("NIGHT");
+				day()
 			}
 			
 				$(".mode_select").click(function(){
 					var current_mode = Cookies.get('mode');
 					if (current_mode == 'day'){
-					  $("body").css('color', 'white');
-					  $("body").css('background-color', '#0E0E0E');
-					  Cookies.set('mode', 'night');
-					  $(".mode_select").text("DAY");
-					  $("#footer").css("background-color", "#1a1a1a");
+					  night();
 					}
 					if (current_mode == 'night'){
-					  $("body").css('color', '#585858');
-					  $("body").css('background-color', 'white');
-					  Cookies.set('mode', 'day');
-					  $(".mode_select").text("NIGHT");
-					  $("#footer").css("background-color", "#f6f6f6");
+					  day();
 					}
 				});
 
@@ -234,8 +222,6 @@ $(document).ready(function(){
 		$("body").addClass("animated fadeOutDown");
 		setTimeout(function(){
 			window.location = href;
-			
-			
 		},500);
 	});
 	$('#menu .inner a').click(function(f) {
@@ -249,6 +235,8 @@ $(document).ready(function(){
 		 window.location = href;
 	},1700);
 	   });
+	var copy = '<li>&copy; ROTHESAY NETHERWOOD SCHOOL PREP-BOYS BASKETBALL. ALL RIGHTS RESERVED.</li><li>BASE THEME BY: HTML5 UP!</li>'
+	$(".copyright").html(copy)
 
 })
 
@@ -259,6 +247,42 @@ $(window).on('load', function() {
 	
 	
    });
+
+function night(){
+	
+	$("body").css('color', 'white');
+	
+	$("body").css('background-color', '#0E0E0E');
+	$("#footer").css("background-color", "#1a1a1a");
+	$(".alert-npa").addClass("game-alert-dark-mode");
+	$(".notification").addClass("notification-dark-mode");
+	Cookies.set('mode', 'night');
+	$(".mode_select").html('<i class="far fa-sun"></i>DAY');
+	
+	$(".mode_select").addClass("animated bounce");
+
+	setTimeout(function(){
+		$(".mode_select").removeClass("animated bounce");
+	},1500)
+	
+	
+}
+
+function day(){
+	$("body").css('color', '#585858');
+					  $("body").css('background-color', 'white');
+					  $(".alert-npa").removeClass("game-alert-dark-mode");
+					  $(".notification").removeClass("notification-dark-mode");
+					  Cookies.set('mode', 'day');
+					 
+						$(".mode_select").addClass("animated bounce");
+					  $("#footer").css("background-color", "#f6f6f6");
+					  $(".mode_select").html('<i class="far fa-moon"></i>NIGHT');
+					  setTimeout(function(){
+						$(".mode_select").removeClass("animated bounce");
+					},1500)
+}
+
 
 
 
