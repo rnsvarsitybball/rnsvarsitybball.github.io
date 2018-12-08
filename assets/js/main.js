@@ -268,10 +268,7 @@ function night(){
 	
 }
 
-function day(){
-	$("body").css('color', '#585858');
-					  $("body").css('background-color', 'white');
-					  $(".alert-npa").removeClass("game-alert-dark-mode");
+function day(){$("body").css('color', '#585858');$("body").css('background-color', 'white');$(".alert-npa").removeClass("game-alert-dark-mode");
 					  $(".notification").removeClass("notification-dark-mode");
 					  Cookies.set('mode', 'day');
 					 
