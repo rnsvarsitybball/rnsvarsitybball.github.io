@@ -4,183 +4,183 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function ($) {
 
-	var	$window = $(window),
+	var $window = $(window),
 		$body = $('body');
 
 	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
-		});
+	breakpoints({
+		xlarge: ['1281px', '1680px'],
+		large: ['981px', '1280px'],
+		medium: ['737px', '980px'],
+		small: ['481px', '736px'],
+		xsmall: ['361px', '480px'],
+		xxsmall: [null, '360px']
+	});
 
 	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+	$window.on('load', function () {
+		window.setTimeout(function () {
+			$body.removeClass('is-preload');
+		}, 100);
+	});
 
 	// Touch?
-		if (browser.mobile)
-			$body.addClass('is-touch');
+	if (browser.mobile)
+		$body.addClass('is-touch');
 
 	// Forms.
-		var $form = $('form');
+	var $form = $('form');
 
-		// Auto-resizing textareas.
-			$form.find('textarea').each(function() {
+	// Auto-resizing textareas.
+	$form.find('textarea').each(function () {
 
-				var $this = $(this),
-					$wrapper = $('<div class="textarea-wrapper"></div>'),
-					$submits = $this.find('input[type="submit"]');
+		var $this = $(this),
+			$wrapper = $('<div class="textarea-wrapper"></div>'),
+			$submits = $this.find('input[type="submit"]');
+
+		$this
+			.wrap($wrapper)
+			.attr('rows', 1)
+			.css('overflow', 'hidden')
+			.css('resize', 'none')
+			.on('keydown', function (event) {
+
+				if (event.keyCode == 13
+					&& event.ctrlKey) {
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					$(this).blur();
+
+				}
+
+			})
+			.on('blur focus', function () {
+				$this.val($.trim($this.val()));
+			})
+			.on('input blur focus --init', function () {
+
+				$wrapper
+					.css('height', $this.height());
 
 				$this
-					.wrap($wrapper)
-					.attr('rows', 1)
-					.css('overflow', 'hidden')
-					.css('resize', 'none')
-					.on('keydown', function(event) {
+					.css('height', 'auto')
+					.css('height', $this.prop('scrollHeight') + 'px');
 
-						if (event.keyCode == 13
-						&&	event.ctrlKey) {
+			})
+			.on('keyup', function (event) {
 
-							event.preventDefault();
-							event.stopPropagation();
+				if (event.keyCode == 9)
+					$this
+						.select();
 
-							$(this).blur();
+			})
+			.triggerHandler('--init');
 
-						}
+		// Fix.
+		if (browser.name == 'ie'
+			|| browser.mobile)
+			$this
+				.css('max-height', '10em')
+				.css('overflow-y', 'auto');
 
-					})
-					.on('blur focus', function() {
-						$this.val($.trim($this.val()));
-					})
-					.on('input blur focus --init', function() {
-
-						$wrapper
-							.css('height', $this.height());
-
-						$this
-							.css('height', 'auto')
-							.css('height', $this.prop('scrollHeight') + 'px');
-
-					})
-					.on('keyup', function(event) {
-
-						if (event.keyCode == 9)
-							$this
-								.select();
-
-					})
-					.triggerHandler('--init');
-
-				// Fix.
-					if (browser.name == 'ie'
-					||	browser.mobile)
-						$this
-							.css('max-height', '10em')
-							.css('overflow-y', 'auto');
-
-			});
+	});
 
 	// Menu.
-		var $menu = $('#menu');
+	var $menu = $('#menu');
 
-		$menu.wrapInner('<div class="inner"></div>');
+	$menu.wrapInner('<div class="inner"></div>');
 
-		$menu._locked = false;
+	$menu._locked = false;
 
-		$menu._lock = function() {
+	$menu._lock = function () {
 
-			if ($menu._locked)
-				return false;
+		if ($menu._locked)
+			return false;
 
-			$menu._locked = true;
+		$menu._locked = true;
 
-			window.setTimeout(function() {
-				$menu._locked = false;
+		window.setTimeout(function () {
+			$menu._locked = false;
+		}, 350);
+
+		return true;
+
+	};
+
+	$menu._show = function () {
+
+		if ($menu._lock())
+			$body.addClass('is-menu-visible');
+
+	};
+
+	$menu._hide = function () {
+
+		if ($menu._lock())
+			$body.removeClass('is-menu-visible');
+
+	};
+
+	$menu._toggle = function () {
+
+		if ($menu._lock())
+			$body.toggleClass('is-menu-visible');
+
+	};
+
+	$menu
+		.appendTo($body)
+		.on('click', function (event) {
+			event.stopPropagation();
+		})
+		.on('click', 'a', function (event) {
+
+			var href = $(this).attr('href');
+
+			event.preventDefault();
+			event.stopPropagation();
+
+			// Hide.
+			$menu._hide();
+
+			// Redirect.
+			if (href == '#menu')
+				return;
+
+			window.setTimeout(function () {
+				window.location.href = href;
 			}, 350);
 
-			return true;
+		})
+		.append('<a class="close" href="#menu">Close</a>');
 
-		};
+	$body
+		.on('click', 'a[href="#menu"]', function (event) {
 
-		$menu._show = function() {
+			event.stopPropagation();
+			event.preventDefault();
 
-			if ($menu._lock())
-				$body.addClass('is-menu-visible');
+			// Toggle.
+			$menu._toggle();
 
-		};
+		})
+		.on('click', function (event) {
 
-		$menu._hide = function() {
+			// Hide.
+			$menu._hide();
 
-			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
+		})
+		.on('keydown', function (event) {
 
-		};
+			// Hide on escape.
+			if (event.keyCode == 27)
+				$menu._hide();
 
-		$menu._toggle = function() {
-
-			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
-
-		};
-
-		$menu
-			.appendTo($body)
-			.on('click', function(event) {
-				event.stopPropagation();
-			})
-			.on('click', 'a', function(event) {
-
-				var href = $(this).attr('href');
-
-				event.preventDefault();
-				event.stopPropagation();
-
-				// Hide.
-					$menu._hide();
-
-				// Redirect.
-					if (href == '#menu')
-						return;
-
-					window.setTimeout(function() {
-						window.location.href = href;
-					}, 350);
-
-			})
-			.append('<a class="close" href="#menu">Close</a>');
-
-		$body
-			.on('click', 'a[href="#menu"]', function(event) {
-
-				event.stopPropagation();
-				event.preventDefault();
-
-				// Toggle.
-					$menu._toggle();
-
-			})
-			.on('click', function(event) {
-
-				// Hide.
-					$menu._hide();
-
-			})
-			.on('keydown', function(event) {
-
-				// Hide on escape.
-					if (event.keyCode == 27)
-						$menu._hide();
-
-			});
+		});
 
 })(jQuery);
 
@@ -189,95 +189,99 @@
 
 
 var mode = Cookies.get('mode');
-			if (mode== 'night'){
-				night();
-			}
-			if (mode== undefined){
-				Cookies.set('mode', 'day');
-				day();
-			}
-			if (mode == 'day'){
-				Cookies.set('mode', 'day');
-				day()
-			}
-			
-				$(".mode_select").click(function(){
-					var current_mode = Cookies.get('mode');
-					if (current_mode == 'day'){
-					  night();
-					}
-					if (current_mode == 'night'){
-					  day();
-					}
-				});
+if (mode == 'night') {
+	night();
+}
+if (mode == undefined) {
+	Cookies.set('mode', 'day');
+	day();
+}
+if (mode == 'day') {
+	Cookies.set('mode', 'day');
+	day()
+}
+
+$(".mode_select").click(function () {
+	var current_mode = Cookies.get('mode');
+	if (current_mode == 'day') {
+		night();
+	}
+	if (current_mode == 'night') {
+		day();
+	}
+});
 
 
-$(document).ready(function(){
-	
+$(document).ready(function () {
 
-	$('#main a').click(function(e) {
+
+	$('#main a').click(function (e) {
 		e.preventDefault();
 		href = $(this).attr('href');
 		$("body").css("animation-duration", "1500ms !important");
 		$("body").addClass("animated fadeOutDown");
-		setTimeout(function(){
+		setTimeout(function () {
 			window.location = href;
-		},500);
+		}, 500);
 	});
-	$('#menu .inner a').click(function(f) {
+	$('#menu .inner a').click(function (f) {
 		f.preventDefault();
 		href = $(this).attr('href');
-		$("body").css("animation-duration", "500ms");
-	$("body").addClass("animated fadeOutRight");
-	
-		setTimeout(function(){
-			
-		 window.location = href;
-	},1700);
-	   });
+		$("#main").css("animation-duration", "400ms");
+		$("#nav").css("animation-duration", "700ms");
+		$("#header").css("animation-duration", "700ms");
+		$("#nav").addClass("animated fadeOutRight");
+		$("#main").addClass("animated fadeOutDown");
+		$("#header").addClass("animated fadeOutUp");
+
+		setTimeout(function () {
+			window.location = href;
+		},40000);
+	});
 	var copy = '<li>&copy; ROTHESAY NETHERWOOD SCHOOL PREP-BOYS BASKETBALL. ALL RIGHTS RESERVED.</li><li>BASE THEME BY: HTML5 UP!</li>'
 	$(".copyright").html(copy)
 
 })
 
-$(window).on('load', function() {
-	setTimeout(function(){
+$(window).on('load', function () {
+	setTimeout(function () {
 		$("#wrapper").css("opacity", "1");
-	},100)
-	
-	
-   });
+	}, 100)
 
-function night(){
-	
+
+});
+
+function night() {
+
 	$("body").css('color', 'white');
-	
+
 	$("body").css('background-color', '#0E0E0E');
 	$("#footer").css("background-color", "#1a1a1a");
 	$(".alert-npa").addClass("game-alert-dark-mode");
 	$(".notification").addClass("notification-dark-mode");
 	Cookies.set('mode', 'night');
 	$(".mode_select").html('<i class="far fa-sun"></i>DAY');
-	
+
 	$(".mode_select").addClass("animated bounce");
 
-	setTimeout(function(){
+	setTimeout(function () {
 		$(".mode_select").removeClass("animated bounce");
-	},1500)
-	
-	
+	}, 1500)
+
+
 }
 
-function day(){$("body").css('color', '#585858');$("body").css('background-color', 'white');$(".alert-npa").removeClass("game-alert-dark-mode");
-					  $(".notification").removeClass("notification-dark-mode");
-					  Cookies.set('mode', 'day');
-					 
-						$(".mode_select").addClass("animated bounce");
-					  $("#footer").css("background-color", "#f6f6f6");
-					  $(".mode_select").html('<i class="far fa-moon"></i>NIGHT');
-					  setTimeout(function(){
-						$(".mode_select").removeClass("animated bounce");
-					},1500)
+function day() {
+	$("body").css('color', '#585858'); $("body").css('background-color', 'white'); $(".alert-npa").removeClass("game-alert-dark-mode");
+	$(".notification").removeClass("notification-dark-mode");
+	Cookies.set('mode', 'day');
+
+	$(".mode_select").addClass("animated bounce");
+	$("#footer").css("background-color", "#f6f6f6");
+	$(".mode_select").html('<i class="far fa-moon"></i>NIGHT');
+	setTimeout(function () {
+		$(".mode_select").removeClass("animated bounce");
+	}, 1500)
 }
 
 

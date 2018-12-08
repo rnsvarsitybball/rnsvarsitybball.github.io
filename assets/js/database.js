@@ -1,6 +1,16 @@
 var game = [
     {
         type:"footage",
+        game_date:"DEC 8, 2018",
+        game_num: 17,
+        game_team:"Halifax Prep",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME5.png",
+        game_link:"https://youtu.be/yTfm318QmPs",
+        game_score:"WIN/ 95 - 93"
+    },
+    {
+        type:"footage",
         game_date:"NOV 30, 2018",
         game_num: 16,
         game_team:"Oakville Basketball Prep",
