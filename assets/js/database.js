@@ -161,9 +161,9 @@ var game = [
 var date = [
     {
         type:"schedule",
-        game_date:"DEC 14-16, 2018",
-        game_team:"Rick Cotter Classic",
-        game_location:"FHS High School, NB"
+        game_date:"DEC 14, 2018 - 3:30 PM",
+        game_team:"LEO HAYES",
+        game_location:"Bliss Carmen Middle School, NB"
     },
     {
         type:"schedule",
