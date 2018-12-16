@@ -3313,9 +3313,8 @@ input, select, textarea {
 
 
 .upcoming-game{
-	padding: 10px;
-	background-color: #f6f6f6;
-	border-radius:3px; 
+	padding: .75rem 1.25rem;
+	background-color: #f6f6f6; 
 	margin-bottom: 30px;
 	text-align: center
 }
@@ -3594,6 +3593,7 @@ h1.alert-heading{
 
 .alert{
 	transition: all 0.3s ease-in-out;
+	border-radius: 0;
 }
 
 .galleryfooter{

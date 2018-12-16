@@ -1,6 +1,16 @@
 var game = [
     {
         type:"footage",
+        game_date:"DEC 14, 2018",
+        game_num: 18,
+        game_team:"Leo Haeys",
+        game_location:"Bliss Carmen Middle School, NB",
+        game_pic:"images/GAME4.png",
+        game_link:"https://youtu.be/nC1pCrjglDs",
+        game_score:"WIN/ 102 - 56"
+    },
+    {
+        type:"footage",
         game_date:"DEC 8, 2018",
         game_num: 17,
         game_team:"Halifax Prep",
