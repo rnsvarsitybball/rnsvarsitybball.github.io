@@ -1,11 +1,21 @@
 var game = [
     {
         type:"footage",
+        game_date:"DEC 16, 2018",
+        game_num: 19,
+        game_team:"BMHS",
+        game_location:"Fredericton High School, NB",
+        game_pic:"images/GAME8.png",
+        game_link:"https://youtu.be/nC1pCrjglDs",
+        game_score:"WIN/ 105 - 66"
+    },
+    {
+        type:"footage",
         game_date:"DEC 14, 2018",
         game_num: 18,
         game_team:"Leo Haeys",
         game_location:"Bliss Carmen Middle School, NB",
-        game_pic:"images/GAME4.png",
+        game_pic:"images/GAME7.png",
         game_link:"https://youtu.be/nC1pCrjglDs",
         game_score:"WIN/ 102 - 56"
     },
