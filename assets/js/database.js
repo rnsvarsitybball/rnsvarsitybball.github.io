@@ -5,7 +5,7 @@ var game = [
         game_num: 19,
         game_team:"BMHS",
         game_location:"Fredericton High School, NB",
-        game_pic:"images/GAME8.png",
+        game_pic:"images/GAME8.jpg",
         game_link:"https://youtu.be/oViDZK_75Fs",
         game_score:"WIN/ 105 - 66"
     },
@@ -15,7 +15,7 @@ var game = [
         game_num: 18,
         game_team:"Leo Haeys",
         game_location:"Bliss Carmen Middle School, NB",
-        game_pic:"images/GAME7.png",
+        game_pic:"images/GAME7.jpg",
         game_link:"https://youtu.be/nC1pCrjglDs",
         game_score:"WIN/ 102 - 56"
     },
