@@ -179,24 +179,24 @@ var game = [
     }
 ];
 var date = [
-    {
-        type:"schedule",
-        game_date:"JAN 19, 2019 - 11:00 AM",
-        game_team:"BROOME STREET ACADEMY",
-        game_location:"Holy Cross High School, NY"
-    },
-    {
-        type:"schedule",
-        game_date:"JAN 19, 2019 - 17:00 PM",
-        game_team:"EDUPRIZE SCHOOL",
-        game_location:"Holy Cross High School, NY"
-    },
-    {
-        type:"schedule",
-        game_date:"JAN 20, 2019 - 15:30 PM",
-        game_team:"THURGOOD MARSHALL ACADEMY",
-        game_location:"Holy Cross High School, NY"
-    }
+    // {
+    //     type:"schedule",
+    //     game_date:"JAN 19, 2019 - 11:00 AM",
+    //     game_team:"BROOME STREET ACADEMY",
+    //     game_location:"Holy Cross High School, NY"
+    // },
+    // {
+    //     type:"schedule",
+    //     game_date:"JAN 19, 2019 - 17:00 PM",
+    //     game_team:"EDUPRIZE SCHOOL",
+    //     game_location:"Holy Cross High School, NY"
+    // },
+    // {
+    //     type:"schedule",
+    //     game_date:"JAN 20, 2019 - 15:30 PM",
+    //     game_team:"THURGOOD MARSHALL ACADEMY",
+    //     game_location:"Holy Cross High School, NY"
+    // }
 ]
 
 var menu = [
@@ -215,6 +215,9 @@ var menu = [
     {
         type:"menu", title:"OUR TEAM", link:"roster.html"
     },
+    {
+        type:"menu", title:"LIVE STREAM", link:"live.html"
+    }
     
 ]
 

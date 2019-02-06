@@ -3316,7 +3316,8 @@ input, select, textarea {
 	padding: .75rem 1.25rem;
 	background-color: #f6f6f6; 
 	margin-bottom: 30px;
-	text-align: center
+	text-align: center;
+	transition: all ease-in-out 0.3s;
 }
 @media(min-width:768px){
 	.upcoming-game{
@@ -3598,4 +3599,8 @@ h1.alert-heading{
 
 .galleryfooter{
 	background-color: rgb(26, 26, 26) !important;
+}
+
+.night{
+	width: 100%;
 }

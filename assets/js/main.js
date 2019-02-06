@@ -230,9 +230,11 @@ $(document).ready(function () {
 		$("#main").css("animation-duration", "400ms");
 		$("#nav").css("animation-duration", "700ms");
 		$("#header").css("animation-duration", "700ms");
+		$(".night").css("animation-duration", "400ms");
 		$("#nav").addClass("animated fadeOutRight");
 		$("#main").addClass("animated fadeOutDown");
 		$("#header").addClass("animated fadeOutUp");
+		$(".night").addClass("animated fadeOutUp");
 
 		setTimeout(function () {
 			window.location = href;
@@ -247,6 +249,7 @@ $(window).on('load', function () {
 	setTimeout(function () {
 		$("#wrapper").css("opacity", "1");
 	}, 100)
+	
 
 
 });
@@ -263,6 +266,8 @@ function night() {
 	$(".mode_select").html('<i class="far fa-sun"></i>DAY');
 
 	$(".mode_select").addClass("animated bounce");
+	$(".upcoming-game").css('background-color', 'transparent');
+	$(".upcoming-game").css('border', '1px solid white');
 
 	setTimeout(function () {
 		$(".mode_select").removeClass("animated bounce");
