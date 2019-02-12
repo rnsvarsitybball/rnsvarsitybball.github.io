@@ -263,7 +263,7 @@ function night() {
 	$(".alert-npa").addClass("game-alert-dark-mode");
 	$(".notification").addClass("notification-dark-mode");
 	Cookies.set('mode', 'night');
-	$(".mode_select").html('<i class="far fa-sun"></i>DAY');
+	$(".mode_select").html('<i class="far fa-sun"></i>LIGHTS ON');
 
 	$(".mode_select").addClass("animated bounce");
 	$(".upcoming-game").css('background-color', 'transparent');
@@ -283,7 +283,7 @@ function day() {
 
 	$(".mode_select").addClass("animated bounce");
 	$("#footer").css("background-color", "#f6f6f6");
-	$(".mode_select").html('<i class="far fa-moon"></i>NIGHT');
+	$(".mode_select").html('<i class="far fa-moon"></i>LIGHTS OFF');
 	setTimeout(function () {
 		$(".mode_select").removeClass("animated bounce");
 	}, 1500)
