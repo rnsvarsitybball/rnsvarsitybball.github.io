@@ -228,7 +228,7 @@
         date: null,
         fast: false,
         end: $.noop,
-        text: "GAME STARTS IN: %s days, %s hours, %s minutes, %s seconds"
+        text: "STARTS IN: %s days, %s hours, %s minutes, %s seconds"
     };
 
     // Set default settings

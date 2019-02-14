@@ -1,0 +1,45 @@
+#year{
+    margin-bottom: 10px;
+    font-size: 7.9em;
+    opacity: 0;
+    transition:all cubic-bezier(0.71, -0.4, 0.01, 1.19) 1.2s;
+    animation-duration: 3s;
+}
+@media screen and (min-width:890px){
+    #year{
+        font-size: 10em;
+    }
+}
+
+.logo{
+    opacity: 0;
+    transition:all cubic-bezier(0.71, -0.4, 0.01, 1.19) 1.2s;
+    animation-delay: 4.7s;
+    animation-duration: 2s !important;
+}
+
+.title_1{
+    opacity: 0;
+    transition:all cubic-bezier(0.71, -0.4, 0.01, 1.19) 1.2s;
+    animation-delay: 1.0s;
+    animation-duration: 2s !important;
+}
+
+#countdown1{
+    opacity: 0;
+    transition:all cubic-bezier(0.71, -0.4, 0.01, 1.19) 1.2s;
+    animation-duration: 2s !important;
+    animation-delay: 3.5s;
+}
+
+.button.primary{
+    opacity: 0;
+    background-color: #242424 !important;
+
+}
+.button.primary:hover{
+    background-color: #3c3c3c !important;
+}
+.button.primary:active{
+    background-color: #3c3c3c !important;
+}

@@ -222,7 +222,7 @@ $(document).ready(function () {
 		$("body").addClass("animated fadeOutDown");
 		setTimeout(function () {
 			window.location = href;
-		}, 500);
+		}, 700);
 	});
 	$('#menu .inner a').click(function (f) {
 		f.preventDefault();
@@ -249,6 +249,8 @@ $(window).on('load', function () {
 	setTimeout(function () {
 		$("#wrapper").css("opacity", "1");
 	}, 100)
+
+	$(window).scroll(title);
 	
 
 
@@ -288,6 +290,7 @@ function day() {
 		$(".mode_select").removeClass("animated bounce");
 	}, 1500)
 }
+
 
 
 
