@@ -2810,7 +2810,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 3em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -3353,6 +3353,7 @@ input, select, textarea {
 .carousel{
 	padding-bottom: 20px;
 	width: 100%;
+	margin-bottom: 1em;
 }
 
 .carousel img{

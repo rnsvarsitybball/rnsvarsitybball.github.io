@@ -239,6 +239,9 @@ $(document).ready(function () {
 		setTimeout(function () {
 			window.location = href;
 		},40000);
+
+		
+		$(".news_container").html('<a class="twitter-timeline wow fadeInUp" data-width="768"  data-height="700" data-dnt="true" href="https://twitter.com/RNS_Hoops?ref_src=twsrc%5Etfw">Tweets by RNS_Hoops</a>')
 	});
 	var copy = '<li>&copy; ROTHESAY NETHERWOOD SCHOOL PREP-BOYS BASKETBALL. ALL RIGHTS RESERVED.</li><li>BASE THEME BY: HTML5 UP!</li>'
 	$(".copyright").html(copy)
@@ -250,7 +253,6 @@ $(window).on('load', function () {
 		$("#wrapper").css("opacity", "1");
 	}, 100)
 
-	$(window).scroll(title);
 	
 
 
@@ -294,5 +296,5 @@ function day() {
 
 
 
-
-
+var device_width = $("#main .inner").width();
+$(".news_container").html('<a class="twitter-timeline wow fadeInUp" data-width="'+device_width+'"  data-height="700" data-dnt="true" href="https://twitter.com/RNS_Hoops?ref_src=twsrc%5Etfw">Tweets by RNS_Hoops</a>')
