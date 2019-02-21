@@ -235,6 +235,7 @@ $(document).ready(function () {
 		$("#main").addClass("animated fadeOutDown");
 		$("#header").addClass("animated fadeOutUp");
 		$(".night").addClass("animated fadeOutUp");
+		$(".game_notify").addClass("animated fadeOutUp");
 
 		setTimeout(function () {
 			window.location = href;
