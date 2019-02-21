@@ -330,3 +330,8 @@ $('.game_notify h4').click(function (v) {
 	}, 700);
 });
 
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) {
+        window.location.reload() 
+    }
+});

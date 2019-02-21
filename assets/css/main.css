@@ -3691,6 +3691,7 @@ svg {
 .game_notify h4{
 	margin:0;
 	cursor: pointer;
+	color:#585858;
 }
 
 /* Rules for sizing the icon. */
