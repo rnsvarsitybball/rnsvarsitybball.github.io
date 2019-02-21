@@ -3675,7 +3675,7 @@ svg {
 }
 
 .photo_inner{
-	transition: cubic-bezier(1, -0.47, 0.17, 1) 0.3s;
+	transition: cubic-bezier(0.54, 0.49, 0, 1.03) 0.5s;
 }
 
 .game_notify{
