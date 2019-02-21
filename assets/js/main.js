@@ -245,13 +245,29 @@ $(document).ready(function () {
 	});
 	var copy = '<li>&copy; ROTHESAY NETHERWOOD SCHOOL PREP-BOYS BASKETBALL. ALL RIGHTS RESERVED.</li><li>BASE THEME BY: HTML5 UP!</li>'
 	$(".copyright").html(copy)
+	
+	function photo(){
+		if ($(window).scrollTop() >= $(".photo_inner").offset().top-20){
+			$(".photo_inner").css("padding", 0);
+			$(".photo_inner").css("max-width", "200em");
+			$(".carousel img").css("border-radius", 0);
+		}
+		else{
+			$(".photo_inner").css("padding", "");
+			$(".photo_inner").css("max-width", "");
+			$(".carousel img").css("border-radius","3px");
+		}
+	}
+	$(window).scroll(photo);
+
 
 })
 
 $(window).on('load', function () {
 	setTimeout(function () {
 		$("#wrapper").css("opacity", "1");
-	}, 100)
+	}, 100);
+	$(".game_notify").css("height", $(".game_notify").outerHeight());
 
 	
 
@@ -297,4 +313,20 @@ function day() {
 
 
 var device_width = $("#main .inner").width();
-$(".news_container").html('<a class="twitter-timeline wow fadeInUp" data-width="'+device_width+'"  data-height="700" data-dnt="true" href="https://twitter.com/RNS_Hoops?ref_src=twsrc%5Etfw">Tweets by RNS_Hoops</a>')
+$(".news_container").html('<a class="twitter-timeline wow fadeInUp" data-width="'+device_width+'"  data-height="700" data-dnt="true" href="https://twitter.com/RNS_Hoops?ref_src=twsrc%5Etfw">Tweets by RNS_Hoops</a>');
+
+
+
+$('.game_notify h4').click(function (v) {
+	v.preventDefault();
+	href = "live.html";
+	$(".game_notify").css("height", "101vh");
+	$(".game_notify h3").addClass("animated fadeOutUp");
+	$(".game_notify h4").addClass("animated fadeOutUp");
+	
+	setTimeout(function () {
+		night();
+		window.location = href;
+	}, 700);
+});
+
