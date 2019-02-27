@@ -1,6 +1,56 @@
 var game = [
     {
         type:"footage",
+        game_date:"JAN 26, 2019",
+        game_num: "SENIOR NIGHT",
+        game_team:"Blue Storm All-Stars",
+        game_location:"Rothesay Netherwood School, NB",
+        game_pic:"images/GAME6.PNG",
+        game_link:"https://www.youtube.com/watch?v=Ky3Ikww7oV0&feature=youtu.be",
+        game_score:"-"
+    },
+    {
+        type:"footage",
+        game_date:"JAN 20, 2019",
+        game_num: 23,
+        game_team:"Thurgood Marshall Academy",
+        game_location:"Holy Cross High School, NY",
+        game_pic:"images/goth.jpg",
+        game_link:"https://www.youtube.com/watch?v=itFtTQulzic",
+        game_score:"-"
+    },
+    {
+        type:"footage",
+        game_date:"JAN 20, 2019",
+        game_num: 22,
+        game_team:"Eduprize School",
+        game_location:"Holy Cross High School, NY",
+        game_pic:"images/goth.jpg",
+        game_link:"https://www.youtube.com/watch?v=U_AZs1V_aAU",
+        game_score:"-"
+    },
+    {
+        type:"footage",
+        game_date:"JAN 19, 2019",
+        game_num: 21,
+        game_team:"Eduprize School",
+        game_location:"Holy Cross High School, NY",
+        game_pic:"images/goth.jpg",
+        game_link:"https://www.youtube.com/watch?v=NXbDqlcH1tw",
+        game_score:"-"
+    },
+    {
+        type:"footage",
+        game_date:"JAN 19, 2019",
+        game_num: 20,
+        game_team:"Broome Street Academy",
+        game_location:"Holy Cross High School, NY",
+        game_pic:"images/goth.jpg",
+        game_link:"https://www.youtube.com/watch?v=EgqS5WQJ9CE",
+        game_score:"-"
+    },
+    {
+        type:"footage",
         game_date:"DEC 16, 2018",
         game_num: 19,
         game_team:"BMHS",

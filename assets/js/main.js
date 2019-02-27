@@ -320,7 +320,7 @@ $(".news_container").html('<a class="twitter-timeline wow fadeInUp" data-width="
 
 $('.game_notify h4').click(function (v) {
 	v.preventDefault();
-	href = "live.html";
+	href = "2019.html";
 	$(".game_notify").css("height", "101vh");
 	$(".game_notify h3").addClass("animated fadeOutUp");
 	$(".game_notify h4").addClass("animated fadeOutUp");
