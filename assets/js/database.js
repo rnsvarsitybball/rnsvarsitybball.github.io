@@ -5,7 +5,7 @@ var game = [
         game_num: "SENIOR NIGHT",
         game_team:"Blue Storm All-Stars",
         game_location:"Rothesay Netherwood School, NB",
-        game_pic:"images/GAME6.PNG",
+        game_pic:"images/GAME6.png",
         game_link:"https://www.youtube.com/watch?v=Ky3Ikww7oV0&feature=youtu.be",
         game_score:"-"
     },
