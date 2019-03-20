@@ -221,31 +221,31 @@
 	</script>
 
 	<script>
-		var url = "assets/csv/book.csv";
-		Papa.parse("assets/csv/book.csv", {
-	delimiter: "",	// auto-detect
-	newline: "",	// auto-detect
-	quoteChar: '"',
-	escapeChar: '"',
-	header: false,
-	transformHeader: undefined,
-	dynamicTyping: false,
-	preview: 0,
-	encoding: "",
-	worker: false,
-	comments: false,
-	step: undefined,
-	complete: undefined,
-	error: undefined,
-	download: false,
-	skipEmptyLines: false,
-	chunk: undefined,
-	fastMode: undefined,
-	beforeFirstChunk: undefined,
-	withCredentials: undefined,
-	transform: undefined,
-	delimitersToGuess: [',', '\t', '|', ';', Papa.RECORD_SEP, Papa.UNIT_SEP]
-})
+		var result;
+	$(window).on('load', function () {
+
+			function doStuff(data) {
+				//Data is usable here
+				result = data;
+				console.log(result);
+				
+			}
+
+			function parseData(url, callBack) {
+				Papa.parse(url, {
+					download: true,
+					header: true,
+					dynamicTyping: true,
+					complete: function (results) {
+						callBack(results.data);
+					}
+				});
+			}
+
+
+			parseData("https://rnsvarsitybball.github.io/assets/csv/book.csv", doStuff);
+		});
+		
 	</script>
 	
 
