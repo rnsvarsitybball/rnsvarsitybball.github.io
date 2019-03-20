@@ -336,22 +336,3 @@ $(window).bind("pageshow", function(event) {
         window.location.reload() 
     }
 });
-
-
-function doStuff(data) {
-	//Data is usable here
-	result = data;
-	console.log(result);
-	
-}
-
-function parseData(url, callBack) {
-	Papa.parse(url, {
-		download: true,
-		header: true,
-		dynamicTyping: true,
-		complete: function (results) {
-			callBack(results.data);
-		}
-	});
-}
