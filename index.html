@@ -223,28 +223,8 @@
 	<script>
 		var result;
 	$(window).on('load', function () {
-
-			function doStuff(data) {
-				//Data is usable here
-				result = data;
-				console.log(result);
-				
-			}
-
-			function parseData(url, callBack) {
-				Papa.parse(url, {
-					download: true,
-					header: true,
-					dynamicTyping: true,
-					complete: function (results) {
-						callBack(results.data);
-					}
-				});
-			}
-
-
-			parseData("https://rnsvarsitybball.github.io/assets/csv/book.csv", doStuff);
-		});
+		parseData("https://rnsvarsitybball.github.io/assets/csv/game_list.csv", doStuff);
+	});
 		
 	</script>
 	
