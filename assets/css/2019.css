@@ -44,3 +44,17 @@
     background-color: #3c3c3c !important;
 }
 
+
+.last{
+    opacity: 0;
+}
+
+.champ_main{
+    padding-top: 10vh !important;
+    height: 100vh;
+
+}
+
+.scroll{
+    padding-top: 5vh;
+}
