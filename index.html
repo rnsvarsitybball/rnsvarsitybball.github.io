@@ -37,8 +37,6 @@
 			<div class="inner">
 				<h3>NPA CHAMPIONSHIP - MAR.21, 2019 @TORONTO, ON</h3>
 				<h4>Click here for more information</h4>
-
-
 			</div>
 		</div>
 		<header id="header">
@@ -196,6 +194,7 @@
 
 	<!-- Scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="assets/js/papaparse.min.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
@@ -220,6 +219,35 @@
 	<script>
 		new WOW().init();
 	</script>
+
+	<script>
+		var url = "assets/csv/book.csv";
+		Papa.parse("assets/csv/book.csv", {
+	delimiter: "",	// auto-detect
+	newline: "",	// auto-detect
+	quoteChar: '"',
+	escapeChar: '"',
+	header: false,
+	transformHeader: undefined,
+	dynamicTyping: false,
+	preview: 0,
+	encoding: "",
+	worker: false,
+	comments: false,
+	step: undefined,
+	complete: undefined,
+	error: undefined,
+	download: false,
+	skipEmptyLines: false,
+	chunk: undefined,
+	fastMode: undefined,
+	beforeFirstChunk: undefined,
+	withCredentials: undefined,
+	transform: undefined,
+	delimitersToGuess: [',', '\t', '|', ';', Papa.RECORD_SEP, Papa.UNIT_SEP]
+})
+	</script>
+	
 
 
 
