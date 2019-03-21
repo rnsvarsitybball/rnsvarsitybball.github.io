@@ -178,10 +178,6 @@
 				<div class="news_container"></div>
 				<div class="recent_news">
 					<div class="news">
-						<hr>
-						<h4 class="user_name"></h4>
-						<p class="user_account"></p>
-						<h4 class="user_text"></h4>
 					</div>
 				</div>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -227,6 +223,29 @@
 		new WOW().init();
 	</script>
 
+
+	<script>
+		$(window).on('load', function () {
+				setTimeout(function () {
+					$("#twitter-widget-0").hide();
+					var twi = $("#twitter-widget-0").contents();
+					var user = twi.find(".tweetauthor-name");
+					var account = twi.find(".tweetauthor-screenname");
+					var text = twi.find(".timeline-Tweet-text");
+					var time = twi.find(".timeline-Tweet-timestamp");
+					var media = twi.find(".timeline-Tweet-media");
+
+
+					for (var a = 0; a < user.length; a++) {
+						var current = $(".news").html();
+						var new_html = current + '<div class="user_tag"><h3 class="user_name">' + user[a].innerText + '</h3><p class="user_account">' + account[a].innerText + '</p></div><p class="user_text">' + text[a].innerHTML + '</p><div class="user_pic">' + media[a].innerHTML + '</div><h6 class="time-stamp">' + time[a].innerText + '</h6><hr class="user_hr">';
+						$(".news").html(new_html);
+					}
+				}, 400)
+
+			});
+	
+	</script>
 	
 
 

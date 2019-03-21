@@ -25,8 +25,6 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -3725,64 +3723,11 @@ svg {
 .user_name{
 	margin-bottom: 0;
 	display: inline;
-	padding: 5px;
+	padding: 5px 10px;
 	/* border: 1px solid; */
 	/* border-radius: 20px; */
-	text-align: left !important;
-	letter-spacing: 0;
-	font-size: 1em !important;
 }
 .user_account{
 	margin-bottom: 0;
 	display: inline-block;
-	text-align: left !important;
-}
-
-.user_text{
-	padding-left: 20px;
-	text-align: left !important;
-}
-
-.time-stamp{
-	text-align: right;
-}
-
-.NaturalImage-image{
-	width: 33%;
-	height:auto;
-	border-radius: 5px;
-}
-
-.TwitterCardsGrid{
-	display: none;
-}
-
-img.CroppedImage-image.js-cspForcedStyle {
-	width: 33%;
-	height: auto;
-	border-radius: 5px;
-}
-
-.MediaCard-mediaContainer.js-cspForcedStyle {
-	padding-bottom: 0px !important;
-}
-
-.user_tag {
-	display: inline-block;
-	padding: 5px 15px;
-	border: 1px solid;
-	border-radius: 100px;
-	text-align: center !important;
-}
-
-.user_pic{
-	margin-left: 20px;
-}
-
-.news_container{
-	display: none;
-}
-
-.user_hr{
-	margin:2em 10px;
 }

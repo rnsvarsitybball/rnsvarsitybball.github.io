@@ -278,6 +278,7 @@ $(window).on('load', function () {
 function night() {
 
 	$("body").css('color', 'white');
+	$("a").css('color', '#ffffff');
 
 	$("body").css('background-color', '#0E0E0E');
 	$("#footer").css("background-color", "#1a1a1a");
