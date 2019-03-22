@@ -225,12 +225,12 @@
 
 
 	<script>
+		$(".news_container").css('opacity', '0');
 		
 		var twi, user, account, text, time, media, list
 
 		$(window).on('load', function () {
 				setTimeout(function () {
-					$("#twitter-widget-0").hide();
 					 twi = $("#twitter-widget-0").contents();
 					 user = twi.find(".tweetauthor-name");
 					 account = twi.find(".tweetauthor-screenname");
@@ -238,6 +238,7 @@
 					 time = twi.find(".timeline-Tweet-timestamp");
 					 media = twi.find(".timeline-Tweet-media");
 					 list = twi.find('.timeline-Tweet');
+					 $(".news_container").css('display', 'none');
 
 
 
@@ -251,7 +252,7 @@
 							$(".user_pic")[a].innerHTML = "";
 						}
 					}
-				}, 10)
+				}, 500)
 
 			});
 	
