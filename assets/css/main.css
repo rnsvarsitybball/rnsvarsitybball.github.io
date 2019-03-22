@@ -169,9 +169,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-p.user_text {
-    padding-top: 11px;
-}
+
 
 	h1 {
 		font-size: 4.75em;
@@ -3739,28 +3737,47 @@ svg {
 }
 
 .user_text{
-	padding-left: 20px;
+	padding-left: 0px;
 	text-align: left !important;
+	max-width: 100%;
+}
+
+@media screen and (min-width:400px){
+	.user_text{
+		padding-left: 20px;
+	}
 }
 
 .time-stamp{
 	text-align: right;
 }
 
-.NaturalImage-image{
-	width: 33%;
-	height:auto;
-	border-radius: 5px;
-}
+
 
 .TwitterCardsGrid{
 	display: none;
 }
 
 img.CroppedImage-image.js-cspForcedStyle {
-	width: 33%;
+	width: 49%;
 	height: auto;
 	border-radius: 5px;
+}
+
+.NaturalImage-image{
+	width: 49%;
+	height:auto;
+	border-radius: 5px;
+}
+
+@media screen and (min-width: 768px){
+	img.CroppedImage-image.js-cspForcedStyle {
+		width: 33%;
+	}
+	
+	.NaturalImage-image{
+		width:33%;
+	}
 }
 
 .MediaCard-mediaContainer.js-cspForcedStyle {
@@ -3780,9 +3797,21 @@ img.CroppedImage-image.js-cspForcedStyle {
 }
 
 .news_container{
-	display: none;
+	/* display: none; */
 }
 
 .user_hr{
 	margin:2em 10px;
+}
+
+.Interstitial-cookieConsent{
+	display: none;
+}
+
+.u-hiddenVisually{
+	display: none;
+}
+
+p.user_text {
+	padding-top: 20px;
 }
