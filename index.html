@@ -245,7 +245,7 @@
 						var current = $(".news").html();
 						var id = list[a].dataset.tweetId;
 						var pic_html = twi.find('div[data-tweet-id='+id+']').find(".timeline-Tweet-media");
-						var new_html = current + '<div class="user_tag"><h3 class="user_name">' + user[a].innerText + '</h3><p class="user_account">' + account[a].innerText + '</p></div><p class="user_text">' + text[a].innerHTML + '</p><div class="user_pic">' + pic_html.html() + '</div><h6 class="time-stamp">' + time[a].innerText + '</h6><hr class="user_hr">';
+						var new_html = current + '<div class="tweet-re wow animated fadeInUp"><div class="user_tag"><h3 class="user_name">' + user[a].innerText + '</h3><p class="user_account">' + account[a].innerText + '</p></div><p class="user_text">' + text[a].innerHTML + '</p><div class="user_pic">' + pic_html.html() + '</div><h6 class="time-stamp">' + time[a].innerText + '</h6><hr class="user_hr"></div>';
 						$(".news").html(new_html);
 						if($(".user_pic")[a].innerHTML == "undefined"){
 							$(".user_pic")[a].innerHTML = "";
