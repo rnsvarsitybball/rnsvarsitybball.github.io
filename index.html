@@ -225,11 +225,12 @@
 
 
 	<script>
-		$(".news_container").hide();
+		
 		var twi, user, account, text, time, media, list
+
 		$(window).on('load', function () {
 				setTimeout(function () {
-					
+					$("#twitter-widget-0").hide();
 					 twi = $("#twitter-widget-0").contents();
 					 user = twi.find(".tweetauthor-name");
 					 account = twi.find(".tweetauthor-screenname");
@@ -250,7 +251,7 @@
 							$(".user_pic")[a].innerHTML = "";
 						}
 					}
-				}, 400)
+				}, 10)
 
 			});
 	
