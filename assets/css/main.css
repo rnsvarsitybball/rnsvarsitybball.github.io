@@ -3759,13 +3759,13 @@ svg {
 }
 
 img.CroppedImage-image.js-cspForcedStyle {
-	width: 49%;
+	width: 100%;
 	height: auto;
 	border-radius: 5px;
 }
 
 .NaturalImage-image{
-	width: 49%;
+	width: 100%;
 	height:auto;
 	border-radius: 5px;
 }
@@ -3776,7 +3776,7 @@ img.CroppedImage-image.js-cspForcedStyle {
 	}
 	
 	.NaturalImage-image{
-		width:33%;
+		width:49%;
 	}
 }
 
@@ -3793,7 +3793,13 @@ img.CroppedImage-image.js-cspForcedStyle {
 }
 
 .user_pic{
-	margin-left: 20px;
+	margin-left: 0px;
+}
+
+@media screen and (min-width: 768px){
+	.user_pic{
+		margin-left: 20px;
+	}
 }
 
 .news_container{
@@ -3814,4 +3820,8 @@ img.CroppedImage-image.js-cspForcedStyle {
 
 p.user_text {
 	padding-top: 20px;
+}
+
+.time-stamp{
+	padding-top: 10px;
 }
