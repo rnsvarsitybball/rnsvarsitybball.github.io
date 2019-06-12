@@ -3744,7 +3744,7 @@ svg {
 
 @media screen and (min-width:400px){
 	.user_text{
-		padding-left: 20px;
+		padding-left: 10px;
 	}
 }
 
@@ -3788,19 +3788,25 @@ img.CroppedImage-image.js-cspForcedStyle {
 	display: inline-block;
 	padding: 5px 15px;
 	border: 1px solid;
-	border-radius: 100px;
+	border-radius: 5px;
 	text-align: center !important;
+}
+@media screen and (min-width:768px){
+	.user_tag{
+		margin-left:10px;
+	}
 }
 
 .user_pic{
 	margin-left: 0px;
+	margin:10px;
 }
 
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
 	.user_pic{
 		margin-left: 20px;
 	}
-}
+} */
 
 .news_container{
 	/* display: none; */
@@ -3824,4 +3830,19 @@ p.user_text {
 
 .time-stamp{
 	padding-top: 10px;
+	margin:10px;
+}
+
+.member{
+	margin-bottom: 10px;
+}
+
+.member-list{
+	padding-top:10px;
+	border-right: 1px solid grey
+}
+
+.tweet-re{
+	padding-left:5%;
+	padding-right:5%; 
 }

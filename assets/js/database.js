@@ -264,14 +264,17 @@ var menu = [
     },
     {
         "type":"menu", title:"OUR TEAM", link:"roster.html"
-    },
-    {
-        "type":"menu", title:"LIVE STREAM", link:"live.html"
     }
+    // },
+    // {
+    //     "type":"menu", title:"LIVE STREAM", link:"live.html"
+    // }
     
 ]
 
 var photo = ["slide_1.JPG","slide_2.JPG","slide_3.JPG","slide_4.JPG","slide_5.JPG","1.jpg","2.jpg","5.jpg","4.jpg","3.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg",]
+
+
 
 
 
