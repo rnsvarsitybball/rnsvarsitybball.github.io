@@ -1,0 +1,23 @@
+{
+    "bridge": {
+        "name": "YeeBridge",
+        "username": "18:00:27:40:BC:1B",
+        "port": 56625,
+        "pin": "931-65-354"
+    },
+    "accessories":[
+        {
+            "accessory": "MiHeaterCooler",
+            "address":"10.0.0.117",
+            "token": "5fde52532f44b881cbe7cee476f6e32f",
+            "name": "Bedroom AC"
+        }
+     ],
+
+    "platforms": [
+        {
+            "platform" : "yeelight",
+            "name" : "yeelight"
+        }
+    ]
+}
