@@ -3802,17 +3802,27 @@ img.CroppedImage-image.js-cspForcedStyle {
 	border: 1px solid;
 	border-radius: 5px;
 	text-align: center !important;
+	width: 100%;
 }
 @media screen and (min-width:768px){
 	.user_tag{
 		margin-left:10px;
+		width: auto;
 	}
 }
 
 .user_pic{
 	margin-left: 0px;
-	margin:10px;
+	/* margin:10px; */
 }
+
+@media screen and (min-width:768px){
+	.user_pic{
+		margin:10px;
+	}
+}
+
+
 
 /* @media screen and (min-width: 768px){
 	.user_pic{
@@ -3859,3 +3869,7 @@ p.user_text {
 	padding-right:5%; 
 }
 
+.retweet-text{
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
