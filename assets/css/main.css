@@ -3426,6 +3426,17 @@ h1.alert-heading{
 	cursor:pointer;
 }
 
+.gal_mod{
+	line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px; 
+}
+
 .gal .col-sm{
 	padding: 0 3px;
 	margin-bottom: -3px;
@@ -3453,12 +3464,13 @@ h1.alert-heading{
 }
 
 #loadmore{
-	margin-top: 1rem;
+	margin-top: 1.4rem;
 	text-align: center
 }
 
 .loadbut{
 	text-align: center;
+
 }
 @media (min-width: 576px){
 .modalpic{
@@ -3846,3 +3858,4 @@ p.user_text {
 	padding-left:5%;
 	padding-right:5%; 
 }
+

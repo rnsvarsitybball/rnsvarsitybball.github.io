@@ -1,28 +1,42 @@
 var a = 0;
-
-var num = 34;
+num_array = []
+var num = 36;
+var once = 9
 var b = 0;
-var k = 0.3;
+var k = 0.2;
 
-    for(var i=0; i<=num; i++){
-        a++;
-        b++;
-        k = k+0.5;
-        if (k > 1.4){
-            k=0.3;
+function load(){
+    for(var i=0; i<once; i++){
+        gen = Math.floor((Math.random() * num) + 1)
+        delay = Math.random() * 1.4 + 0.1
+        if (num_array.length < num){
+            if(num_array.includes(gen) == false){
+                a++;
+                b++;
+                if (a > 3){
+                    var current = $(".gal").html();
+                    var new_html ='<div class="w-100"></div><div class="col-sm wow fadeInUp" data-wow-delay="'+delay+'s"><img src="images/'+gen+'.jpg" id="no'+gen+'"></div>';
+                    $(".gal").append(new_html)
+                    a = 1;
+                }
+                else{
+                    var current = $(".gal").html();
+                    var new_html ='<div class="col-sm wow fadeInUp" data-wow-delay="'+delay+'s"><img src="images/'+gen+'.jpg" id="no'+gen+'"></div>';
+                    $(".gal").append(new_html)
+                }
+                num_array.push(gen)
+                console.log(num_array)
+            }
+            
+            else{
+                i--
+            }
         }
-        if (a > 3){
-            var current = $(".gal").html();
-            var new_html = current + '<div class="w-100"></div><div class="col-sm wow fadeInUp" data-wow-delay="'+k+'s"><img src="images/'+b+'.jpg"></div>';
-            $(".gal").html(new_html);
-            a = 1;
-        }
-        else{
-            var current = $(".gal").html();
-            var new_html = current + '<div class="col-sm wow fadeInUp" data-wow-delay="'+k+'s"><img src="images/'+b+'.jpg"></div>';
-            $(".gal").html(new_html);
+        else if(num_array.length == num){
+            break
         }
     }
+}
 
     $("img").click(function(){
         $(".modal-body").html('<img class="modalpic"src="'+$(this).attr("src")+'">')
@@ -46,3 +60,17 @@ for (var i = 0; i<menu.length; i++){
     var new_html = current_html + '<li><a href="'+menu[i].link+'">'+menu[i].title+'</a></li>'
     $(".menu_list").html(new_html);
 }
+
+
+load();
+
+$('#loadmore').click(function(){
+    if (num_array.length < num){
+        load();
+    }
+    else if (num_array.length == num){
+        $(this).text("THAT'S IT!");
+        $(this).addClass('disabled');
+    }
+    
+})
