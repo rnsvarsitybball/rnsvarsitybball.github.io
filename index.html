@@ -33,12 +33,13 @@
 	<div id="wrapper">
 
 		<!-- Header -->
-		<!-- <div class="game_notify wow fadeInDown">
+		<div class="game_notify wow fadeInDown">
 			<div class="inner">
-				<h3>NPA CHAMPIONSHIP - MAR.21, 2019 @TORONTO, ON</h3>
-				<h4>Click here for more information</h4>
+				<h4>UPCOMING GAMES</h4>
+				<h3 class='game'></h3>
+				<!-- <h4>Click here for more information</h4> -->
 			</div>
-		</div> -->
+		</div>
 		<header id="header">
 			<div class="inner">
 				<div class="head">
@@ -212,6 +213,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	 crossorigin="anonymous"></script>
 	<script src="assets/js/countdown.js"></script>
+	<script src='assets/js/jquery.csv.min.js'></script>
 
 	<script>
 	</script>
@@ -227,46 +229,70 @@
 
 	<script>
 		$(".news_container").css('opacity', '0');
-		
-		var twi, user, account, text, time, media, list
 
-		$(window).on('load', function () {
+			var twi, user, account, text, time, media, list
+
+			$(window).on('load', function () {
 				setTimeout(function () {
-					 twi = $("#twitter-widget-0").contents();
-					 user = twi.find(".tweetauthor-name");
-					 account = twi.find(".tweetauthor-screenname");
-					 text = twi.find(".timeline-Tweet-text");
-					 time = twi.find(".timeline-Tweet-timestamp");
-					 media = twi.find(".timeline-Tweet-media");
-					 list = twi.find('.timeline-Tweet');
-					 retweet = twi.find('')
-					 $(".news_container").css('display', 'none');
+					twi = $("#twitter-widget-0").contents();
+					user = twi.find(".tweetauthor-name");
+					account = twi.find(".tweetauthor-screenname");
+					text = twi.find(".timeline-Tweet-text");
+					time = twi.find(".timeline-Tweet-timestamp");
+					media = twi.find(".timeline-Tweet-media");
+					list = twi.find('.timeline-Tweet');
+					retweet = twi.find('')
+					$(".news_container").css('display', 'none');
 
 
 
 					for (var a = 0; a < user.length; a++) {
 						var current = $(".news").html();
 						var id = list[a].dataset.tweetId;
-						var pic_html = twi.find('div[data-tweet-id='+id+']').find(".timeline-Tweet-media");
-						var retweeted_html =  twi.find('div[data-tweet-id='+id+']').find(".timeline-Tweet-retweetCredit");
-						console.log(retweeted_html.html())
-					
-						var new_html = current + '<div class="tweet-re wow animated fadeInUp"><div class="retweet"><h6 class="retweet-text">'+retweeted_html.html()+'</h6></div><div class="user_tag"><h3 class="user_name">' + user[a].innerText + '</h3><p class="user_account">' + account[a].innerText + '</p></div><p class="user_text">' + text[a].innerHTML + '</p><div class="user_pic">' + pic_html.html() + '</div><h6 class="time-stamp">' + time[a].innerText + '</h6><hr class="user_hr"></div>';
+						var pic_html = twi.find('div[data-tweet-id=' + id + ']').find(".timeline-Tweet-media");
+						var retweeted_html = twi.find('div[data-tweet-id=' + id + ']').find(".timeline-Tweet-retweetCredit");
+
+
+						var new_html = current + '<div class="tweet-re wow animated fadeInUp"><div class="retweet"><h6 class="retweet-text">' + retweeted_html.html() + '</h6></div><div class="user_tag"><h3 class="user_name">' + user[a].innerText + '</h3><p class="user_account">' + account[a].innerText + '</p></div><p class="user_text">' + text[a].innerHTML + '</p><div class="user_pic">' + pic_html.html() + '</div><h6 class="time-stamp">' + time[a].innerText + '</h6><hr class="user_hr"></div>';
 						$(".news").html(new_html);
-						if($(".user_pic")[a].innerHTML == "undefined"){
+						if ($(".user_pic")[a].innerHTML == "undefined") {
 							$(".user_pic")[a].innerHTML = "";
 						}
-						
-						
-						if($('.retweet-text')[a].innerHTML == 'undefined'){
+
+
+						if ($('.retweet-text')[a].innerHTML == 'undefined') {
 							$('.retweet-text')[a].innerHTML = '';
 						}
-						
+
 					}
 				}, 500)
 
 			});
 	
+	</script>
+
+	<script>
+		count = 0
+		status = 0
+		while(status == 0){
+			var current_data = date[count]
+			var ori = date[count].game_date.split('-');
+			var gamedate = ori[0]+ori[1]+ori[2];
+			var d = new Date();
+			var month = d.getMonth()+1;
+			var day = d.getDate();
+
+			var nowdate = d.getFullYear()+''+(month<10 ? '0' : '')+month+''+(day<10 ? '0' : '')+day
+
+			if (gamedate-nowdate >= 0){
+				console.log(gamedate-nowdate)
+				$(".game").text(''+ori)
+				status = 1
+			}
+			else{
+				count++;
+			}
+		}
 	</script>
 	
 
