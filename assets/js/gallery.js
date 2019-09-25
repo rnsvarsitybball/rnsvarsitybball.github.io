@@ -8,7 +8,13 @@ var k = 0.2;
 function load(){
     for(var i=0; i<once; i++){
         gen = Math.floor((Math.random() * num) + 1)
-        delay = Math.random() * 1.4 + 0.1
+        if ($(window).width() < 768){
+            delay = Math.random() * 0.4 + 0.1
+        }
+        else{
+            delay = Math.random() * 1.4 + 0.1
+        }
+        
         if (num_array.length < num){
             if(num_array.includes(gen) == false){
                 a++;
@@ -25,7 +31,6 @@ function load(){
                     $(".gal").append(new_html)
                 }
                 num_array.push(gen)
-                console.log(num_array)
             }
             
             else{
@@ -37,22 +42,24 @@ function load(){
         }
     }
 }
-
+function zoom(){
     $("img").click(function(){
+        console.log('j')
         $(".modal-body").html('<img class="modalpic"src="'+$(this).attr("src")+'">')
-        
         $('#photom').modal('show');
-
-        if ($('#photom').modal('show') == true){
-            if ($(".modalpic").height() > 1000){
-                $(".modalpic").css("width", "50%");
+        if ($(window).width() >= 768){
+            if ($(this).height() > $(this).width()){
+                $(".modalpic").css("height", '80vh');
+                $(".modalpic").css("width", 'auto');
             }
             else{
-                $(".modalpic").css("width", "80%");
+                $(".modalpic").css("width", "100%");
             }
         }
         
-    })
+    });
+}
+    
 
     var menu = fuse2.search("menu");
 for (var i = 0; i<menu.length; i++){
@@ -62,11 +69,16 @@ for (var i = 0; i<menu.length; i++){
 }
 
 
-load();
+
+    load();
+    zoom();
+
+
 
 $('#loadmore').click(function(){
     if (num_array.length < num){
         load();
+        zoom();
     }
     else if (num_array.length == num){
         $(this).text("THAT'S IT!");

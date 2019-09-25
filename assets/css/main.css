@@ -3877,3 +3877,13 @@ p.user_text {
 a{
 	word-break: break-all;
 }
+
+.game_info{
+	color:white;
+	margin:0;
+}
+
+@media screen and (max-width: 736px)
+.game_info {
+    font-size: 0.6em;
+}
