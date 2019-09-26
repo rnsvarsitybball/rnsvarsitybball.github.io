@@ -3706,7 +3706,6 @@ svg {
 }
 .game_notify h4{
 	margin:0;
-	cursor: pointer;
 	color:#585858;
 }
 
@@ -3824,6 +3823,7 @@ img.CroppedImage-image.js-cspForcedStyle {
 
 
 
+
 /* @media screen and (min-width: 768px){
 	.user_pic{
 		margin-left: 20px;
@@ -3883,7 +3883,22 @@ a{
 	margin:0;
 }
 
-@media screen and (max-width: 736px)
-.game_info {
-    font-size: 0.6em;
+@media screen and (max-width: 736px){
+	.game_info {
+		font-size: 0.6em;
+	}
+}
+
+.button_main{
+	padding: 10px 20px;
+	border: 1px solid black;
+	transition: ease-in-out 0.2s all;
+	border-radius: 3px;
+}
+
+.button_main:hover{
+	background-color: black;
+	color:white !important;
+	border: 1px solid black;
+	text-decoration: none;
 }

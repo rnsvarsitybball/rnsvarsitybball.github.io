@@ -248,6 +248,9 @@ var menu = [
         "type":"menu",title:"HOME",link:"/"
     },
     {
+        "type":"menu", title:"UPCOMING GAMES", link:"upcoming.html"
+    },
+    {
         "type":"menu", title:"GALLERY", link:"gallery.html"
     },
     {
