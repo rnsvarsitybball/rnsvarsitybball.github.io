@@ -1,4 +1,25 @@
 var game = [
+    
+    {
+        "type" :"footage",
+        "game_date":"SEP 28, 2019",
+        "game_num": 26,
+        "game_team":"Thetford CJEP",
+        "game_location":"Rothesay Netherwood School, NB",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=7u5RWsoj-AI&feature=youtu.be",
+        "game_score":"-"
+    },
+    {
+        "type" :"footage",
+        "game_date":"SEP 27, 2019",
+        "game_num": 25,
+        "game_team":"Thetford Academy Prep",
+        "game_location":"Rothesay Netherwood School, NB",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=vtFrkysPOYw&feature=youtu.be",
+        "game_score":"-"
+    },
     {
         "type" :"footage",
         "game_date":"JAN 26, 2019",
