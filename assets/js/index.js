@@ -17,8 +17,14 @@ function readschedule(){
 	
 			if (gamedate-nowdate >= 0){
 				$(".game").text(current_data.game_team);
-				$('.game_location').text(' @'+current_data.game_location);
-				$('.game_time').text(game_year+"/"+game_month+"/"+game_day+" - "+current_data.game_till)
+				$('.game_location').text(current_data.game_location);
+				if (current_data.game_till == ''){
+					$('.game_time').text(game_year+"/"+game_month+"/"+game_day+" @ "+current_data.game_time)
+				}
+				else{
+					$('.game_time').text(game_year+"/"+game_month+"/"+game_day+" - "+current_data.game_till)
+				}
+				
 				status = 1
 			}
 			else{
