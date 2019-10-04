@@ -12,7 +12,7 @@ function readschedule(){
 			game_year = ori[0]
 			game_location = current_data.game_location
 			game_time = current_data.game_time
-			twentyfour = 200+parseInt(current_data.game_time_24h)
+			twentyfour = parseInt(current_data.game_time_24h)
 			var gamedate = game_year+(game_month<10 ? '0' : '')+game_month+(game_day<10 ? '0' : '')+game_day+current_data.game_time_24h;
 			var d = new Date();
 			var month = d.getMonth()+1;
