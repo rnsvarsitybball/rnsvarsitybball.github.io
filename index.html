@@ -39,7 +39,7 @@
 				<h3 class='game'></h3>
 				<h5 class='game_info game_location'></h5>
 				<h5 class='game_info game_time'></h5>
-				<!-- <h4>Click here for more information</h4> -->
+				<a href='index.html' onclick="javascript:ical()" id='cal-download'>Add to your calendar</a>
 			</div>
 		</div>
 		<header id="header">
@@ -216,9 +216,11 @@
 	 crossorigin="anonymous"></script>
 	<script src="assets/js/countdown.js"></script>
 	<script src="assets/js/jquery.csv.min.js"></script>
+	<script src="assets/js/ics.deps.min.js"></script>
 	<script src="assets/js/index.js"></script>
 
 	<script>
+		var cal = ics();
 	</script>
 
 

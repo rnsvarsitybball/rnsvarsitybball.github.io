@@ -1,3 +1,4 @@
+var game_month, game_day, game_year, game_location, game_time, game_team;
 function readschedule(){
 	schedule_array = $.csv.toObjects(csvdata.responseText)
 		count = 0
@@ -5,9 +6,12 @@ function readschedule(){
 		while(status == 0){
 			var current_data = schedule_array[count]
 			var ori = current_data.game_date.split('/');
+			game_team = current_data.game_team
 			game_month = ori[1]
 			game_day = ori[2]
 			game_year = ori[0]
+			game_location = current_data.game_location
+			game_time = current_data.game_time
 			var gamedate = game_year+(game_month<10 ? '0' : '')+game_month+(game_day<10 ? '0' : '')+game_day;
 			var d = new Date();
 			var month = d.getMonth()+1;
@@ -31,7 +35,8 @@ function readschedule(){
 				count++;
 			}
 		}
-	return schedule_array
+	return
+	
 	console.log('as')
 	}
 
@@ -49,4 +54,15 @@ function getSchedule(){
 	
 });
 
+}
+
+
+function ical(){
+	subject = 'RNS VS.'+game_team;
+	description = 'testing'
+	console.log(game_location)
+	begin = game_month+'/'+game_day+'/'+game_year+' '+game_time
+	end = game_month+'/'+game_day+'/'+game_year+' '+game_time
+	cal.addEvent(subject, description, game_location, begin, end);
+	cal.download('Game time')
 }
