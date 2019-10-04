@@ -11,7 +11,7 @@ function getSchedule() {
             if (status == "true"){
                 for(var i=0;i<schedule_array.length-1;i++){
                 current = schedule_array[i];
-                html = '<tr><th scope="row">'+current.game_date+'</th><td>'+current.game_till+'</td><td>'+current.game_time+'</td><td>'+current.game_team+'</td><td>'+current.game_location+'</td></tr>'
+                html = '<tr><th scope="row">'+current.game_date+'</th><td>'+current.game_time+'</td><td>'+current.game_team+'</td><td>'+current.game_location+'</td></tr>'
                 $('tbody').append(html)
                 }
             }
