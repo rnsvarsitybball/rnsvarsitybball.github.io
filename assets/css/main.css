@@ -3916,3 +3916,7 @@ a{
     text-decoration: none;
     border: none;
 }
+
+.four_am:hover{
+	color: #f93a47 !important;
+}

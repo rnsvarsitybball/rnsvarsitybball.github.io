@@ -12,13 +12,16 @@ function readschedule(){
 			game_year = ori[0]
 			game_location = current_data.game_location
 			game_time = current_data.game_time
-			twentyfour = parseInt(current_data.game_time_24h)
-			var gamedate = game_year+(game_month<10 ? '0' : '')+game_month+(game_day<10 ? '0' : '')+game_day+current_data.game_time_24h;
+			twentyfour = 200 + parseInt(current_data.game_time_24h)
+			var gamedate = game_year+(game_month<10 ? '0' : '')+game_month+(game_day<10 ? '0' : '')+game_day+twentyfour;
 			var d = new Date();
 			var month = d.getMonth()+1;
 			var day = d.getDate();
+			var hours = d.getHours();
+			var min = d.getMinutes();
+
 	
-			var nowdate = d.getFullYear()+''+(month<10 ? '0' : '')+month+''+(day<10 ? '0' : '')+day+d.getHours()+d.getMinutes()
+			var nowdate = d.getFullYear()+''+(month<10 ? '0' : '')+month+''+(day<10 ? '0' : '')+day+(hours<10 ? '0' : '')+hours+(min<10 ? '0' : '')+min
 	
 			if (gamedate-nowdate >= 0){
 				$(".game").text('VS. '+current_data.game_team);
