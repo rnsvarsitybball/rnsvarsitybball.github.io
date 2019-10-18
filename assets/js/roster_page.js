@@ -11,7 +11,7 @@ function getSchedule() {
     status = false
     csvdata = $.ajax({
         type: "GET",
-        url: "https://raw.githubusercontent.com/rnsvarsitybball/rnsvarsitybball.github.io/master/assets/csv/schedule.csv",
+        url: "https://raw.githubusercontent.com/rnsvarsitybball/rnsvarsitybball.github.io/master/assets/csv/roster.csv",
         dataType: "text",
         success: function (data) {
             schedule_array = $.csv.toObjects(csvdata.responseText)
@@ -19,8 +19,8 @@ function getSchedule() {
             if (status == "true"){
                 for(var i=0;i<schedule_array.length-1;i++){
                 current = schedule_array[i];
-                html = '<tr><th scope="row">'+current.game_date+'</th><td>'+current.game_till+'</td><td>'+current.game_time+'</td><td>'+current.game_team+'</td><td>'+current.game_location+'</td></tr>'
-                $('tbody').append(html)
+                html = '<tr><th scope="row">'+current.name+'</th><td>'+current.yr+'</td><td>'+current.ht+'</td><td>'+current.wt+'</td><td>'+current.pos+'</td></tr>'
+                $('.player').append(html)
                 }
             }
         }
