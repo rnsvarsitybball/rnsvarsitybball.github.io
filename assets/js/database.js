@@ -1,5 +1,14 @@
 var game = [
-    
+    {
+        "type" :"footage",
+        "game_date":"SEP 28, 2019",
+        "game_num": "NPA Eastern Session",
+        "game_team":"Halifax Prep",
+        "game_location":"ST. MARY'S UNIVERSITY, HALIFAX, NS",
+        "game_pic":"images/GAME5.png",
+        "game_link":"https://youtu.be/UqJ-4wHba-U",
+        "game_score":"WIN/ 96 - 82"
+    },
     {
         "type" :"footage",
         "game_date":"SEP 28, 2019",
