@@ -3874,7 +3874,7 @@ p.user_text {
 	margin-bottom: 5px;
 	font-size: 0.5rem;
 }
-a{
+.recent_news a{
 	word-break: break-all;
 }
 
@@ -3905,7 +3905,15 @@ a{
 
 #cal-download{
 	cursor: pointer;
-    font-weight: 900;
+    
+}
+
+.four_am:hover{
+	color: #f93a47 !important;
+}
+
+#live_link{
+	font-weight: 900;
     line-height: 1.5;
     margin: 0 0 2em 0;
     text-transform: uppercase;
@@ -3916,7 +3924,6 @@ a{
     text-decoration: none;
     border: none;
 }
-
-.four_am:hover{
-	color: #f93a47 !important;
+#live_link:hover{
+	color:#f93a47 !important
 }
