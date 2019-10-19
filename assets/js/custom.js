@@ -1,8 +1,8 @@
-var footage_result = fuse.search("footage");
     var width = $(window).width();
 
     if (width < 980){
         for (var i = 0; i<4; i++){
+            game = game2019;
             var current_html = $(".tiles").html();
             var color = i+1;
             var new_html = current_html + '<article class="style'+color+' '+i+'game"><span class="image"><img src="'+game[i].game_pic+'" alt="" /></span><a href="'+game[i].game_link+'"><h2>GAME #'+game[i].game_num+'</h2><h2>w/ '+game[i].game_team+'</h2><h3>'+game[i].game_date+'</h3><div class="content"><h4 class="score">'+game[i].game_score+'</h4><p>'+game[i].game_location+'</p></div></a></article>'
@@ -11,6 +11,7 @@ var footage_result = fuse.search("footage");
     }
     else {
         for (var i = 0; i<3; i++){
+            game = game2019;
             var current_html = $(".tiles").html();
             var color = i+1;
             var new_html = current_html + '<article class="style'+color+' '+i+'game"><span class="image"><img src="'+game[i].game_pic+'" alt="" /></span><a href="'+game[i].game_link+'"><h2>GAME #'+game[i].game_num+'</h2><h2>w/ '+game[i].game_team+'</h2><h3>'+game[i].game_date+'</h3><div class="content"><h4 class="score">'+game[i].game_score+'</h4><p>'+game[i].game_location+'</p></div></a></article>'

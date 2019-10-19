@@ -1,4 +1,14 @@
-var game = [
+var game2019 = [
+    {
+        "type" :"footage",
+        "game_date":"OCT 19, 2019",
+        "game_num": "NPA Eastern Session",
+        "game_team":"Oakville Basketball Prep",
+        "game_location":"ST. MARY'S UNIVERSITY, HALIFAX, NS",
+        "game_pic":"images/GAME5.png",
+        "game_link":"https://youtu.be/curZWJj4rE4",
+        "game_score":"WIN/ 114 - 77"
+    },
     {
         "type" :"footage",
         "game_date":"OCT 18, 2019",
@@ -38,7 +48,9 @@ var game = [
         "game_pic":"images/GAME6.png",
         "game_link":"https://www.youtube.com/watch?v=vtFrkysPOYw&feature=youtu.be",
         "game_score":"-"
-    },
+    }
+]
+var game2018 =[
     {
         "type" :"footage",
         "game_date":"JAN 26, 2019",
@@ -328,6 +340,6 @@ var options = {
         "type", 
     ]
 };
-var fuse = new Fuse(game, options); // "list" is the item array
+// var fuse = new Fuse(game, options); // "list" is the item array
 var fuse1 = new Fuse(date, options);
 var fuse2 = new Fuse(menu, options);
