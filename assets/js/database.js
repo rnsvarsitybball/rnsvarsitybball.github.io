@@ -1,7 +1,17 @@
 var game = [
     {
         "type" :"footage",
-        "game_date":"SEP 28, 2019",
+        "game_date":"OCT 18, 2019",
+        "game_num": "NPA Eastern Session",
+        "game_team":"London Basketball Academy",
+        "game_location":"ST. MARY'S UNIVERSITY, HALIFAX, NS",
+        "game_pic":"images/GAME5.png",
+        "game_link":"https://youtu.be/5pqRlk0PKcE",
+        "game_score":"WIN/ 85 - 61"
+    },
+    {
+        "type" :"footage",
+        "game_date":"OCT 17, 2019",
         "game_num": "NPA Eastern Session",
         "game_team":"Halifax Prep",
         "game_location":"ST. MARY'S UNIVERSITY, HALIFAX, NS",
