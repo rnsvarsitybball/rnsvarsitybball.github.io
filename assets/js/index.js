@@ -12,7 +12,11 @@ function readschedule(){
 			game_year = ori[0]
 			game_location = current_data.game_location
 			game_time = current_data.game_time
+			console.log(parseInt(current_data.game_time_24h))
 			twentyfour = 200 + parseInt(current_data.game_time_24h)
+			if (twentyfour < 1000){
+				twentyfour = '0'+twentyfour
+			}
 			var gamedate = game_year+(game_month<10 ? '0' : '')+game_month+(game_day<10 ? '0' : '')+game_day+twentyfour;
 			var d = new Date();
 			var month = d.getMonth()+1;
@@ -22,7 +26,9 @@ function readschedule(){
 
 	
 			var nowdate = d.getFullYear()+''+(month<10 ? '0' : '')+month+''+(day<10 ? '0' : '')+day+(hours<10 ? '0' : '')+hours+(min<10 ? '0' : '')+min
-	
+			console.log(gamedate)
+			console.log(nowdate)
+			console.log(gamedate-nowdate)
 			if (gamedate-nowdate >= 0){
 				$(".game").text('VS. '+current_data.game_team);
 				$('.game_location').text(current_data.game_location);
