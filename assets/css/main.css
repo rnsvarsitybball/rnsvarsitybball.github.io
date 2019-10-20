@@ -3802,6 +3802,8 @@ img.CroppedImage-image.js-cspForcedStyle {
 	border-radius: 5px;
 	text-align: center !important;
 	width: 100%;
+	color:white;
+	background-color: #585858;
 }
 @media screen and (min-width:768px){
 	.user_tag{
