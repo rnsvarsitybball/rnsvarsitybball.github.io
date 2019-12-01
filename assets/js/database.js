@@ -1,6 +1,16 @@
 var game2019 = [
     {
         "type" :"footage",
+        "game_date":"NOV 15, 2019",
+        "game_num": "2019 Naismith Prep Classic",
+        "game_team":"Redemption Christian School (NY)",
+        "game_location":"Bill Crothers School, ON",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=uylGjXyKKas",
+        "game_score":"LOSE/ 74 - 77"
+    },
+    {
+        "type" :"footage",
         "game_date":"OCT 19, 2019",
         "game_num": "NPA Eastern Session",
         "game_team":"Oakville Basketball Prep",
