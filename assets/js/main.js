@@ -295,6 +295,7 @@ function day() {
 	$(".tiles a").css('color', '#ffffff');
 	$('.button_main').css('border', '1px solid #585858');
 	$(".notification").removeClass("notification-dark-mode");
+	$(".menu_list li a").css('color','#ffffff')
 	Cookies.set('mode', 'day');
 
 	$(".mode_select").addClass("animated bounce");

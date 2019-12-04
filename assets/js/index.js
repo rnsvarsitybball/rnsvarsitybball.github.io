@@ -34,7 +34,6 @@ function readschedule(){
 				$('.game_location').text(current_data.game_location);
 				if (current_data.game_till == ''){
 					$('.game_time').text(game_year+"/"+game_month+"/"+game_day+" @ "+current_data.game_time)
-					
 				}
 				else{
 					$('.game_time').text(game_year+"/"+game_month+"/"+game_day+" - "+current_data.game_till)
