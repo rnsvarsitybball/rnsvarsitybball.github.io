@@ -1,6 +1,16 @@
 var game2019 = [
     {
         "type" :"footage",
+        "game_date":"NOV 29, 2019",
+        "game_num": "3rd Annual Hoops & Dreams Showcase",
+        "game_team":"Liberty Heights (US)",
+        "game_location":"Methodist University, North Carolina",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://youtu.be/gTydzNHGqhM",
+        "game_score":""
+    },
+    {
+        "type" :"footage",
         "game_date":"NOV 15, 2019",
         "game_num": "2019 Naismith Prep Classic",
         "game_team":"Redemption Christian School (NY)",
