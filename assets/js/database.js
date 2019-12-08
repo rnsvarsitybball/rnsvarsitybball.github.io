@@ -1,13 +1,23 @@
 var game2019 = [
     {
         "type" :"footage",
+        "game_date":"NOV 30, 2019",
+        "game_num": "3rd Annual Hoops & Dreams Showcase",
+        "game_team":"Fayetteville Christian (US)",
+        "game_location":"Methodist University, North Carolina",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://youtu.be/MiL46CwkA7I",
+        "game_score":"WIN/ 72-52"
+    },
+    {
+        "type" :"footage",
         "game_date":"NOV 29, 2019",
         "game_num": "3rd Annual Hoops & Dreams Showcase",
         "game_team":"Liberty Heights (US)",
         "game_location":"Methodist University, North Carolina",
         "game_pic":"images/GAME6.png",
         "game_link":"https://youtu.be/gTydzNHGqhM",
-        "game_score":""
+        "game_score":"LOSE/ 62 - 42"
     },
     {
         "type" :"footage",
