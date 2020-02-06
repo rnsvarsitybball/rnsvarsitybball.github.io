@@ -1,6 +1,56 @@
 var game2019 = [
     {
         "type" :"footage",
+        "game_date":"FEB 1, 2020",
+        "game_num": "2020 Dairy Town Classic",
+        "game_team":"Bernice MacNaughton High School, NB",
+        "game_location":"Riverview Royals, NS",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=SE5tQduGD58",
+        "game_score":"WIN/ 103-79"
+    },
+    {
+        "type" :"footage",
+        "game_date":"FEB 1, 2020",
+        "game_num": "2020 Dairy Town Classic",
+        "game_team":"Bernice MacNaughton High School, NB",
+        "game_location":"Dairy Town Classic, NB",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=rsH-MKwUETk",
+        "game_score":"WIN/ 98-52"
+    },
+    {
+        "type" :"footage",
+        "game_date":"JAN 30, 2020",
+        "game_num": "2020 Dairy Town Classic",
+        "game_team":"Auburn High, NB",
+        "game_location":"Dairy Town Classic, NB",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=oSIuARfW7SY",
+        "game_score":"WIN/ 143-59"
+    },
+    {
+        "type" :"footage",
+        "game_date":"JAN 25, 2020",
+        "game_num": "2020 Gotham Hoops Winter Classic",
+        "game_team":"Upper Room Christian (NY)",
+        "game_location":"Holy Cross High School, New York",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=QnSLRUHTdtg&feature=youtu.be",
+        "game_score":"LOSE/ 61-49"
+    },
+    {
+        "type" :"footage",
+        "game_date":"JAN 25, 2020",
+        "game_num": "2020 Gotham Hoops Winter Classic",
+        "game_team":"Our Saviour Lutheran (NY)",
+        "game_location":"Holy Cross High School, New York",
+        "game_pic":"images/GAME6.png",
+        "game_link":"https://www.youtube.com/watch?v=xhgtdvWgfGY",
+        "game_score":"LOSE/ 82-72"
+    },
+    {
+        "type" :"footage",
         "game_date":"NOV 30, 2019",
         "game_num": "3rd Annual Hoops & Dreams Showcase",
         "game_team":"Fayetteville Christian (US)",
