@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45fb2c9b-49cd-4562-b652-d2f18b6c1a61" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/database.js" afterDir="false" />
-    </list>
+    <list default="true" id="45fb2c9b-49cd-4562-b652-d2f18b6c1a61" name="Default" comment="UPDATE" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +50,16 @@
       <workItem from="1548266887389" duration="322000" />
       <workItem from="1549569193136" duration="5000" />
       <workItem from="1550537320225" duration="10000" />
-      <workItem from="1580952878279" duration="1285000" />
+      <workItem from="1580952878279" duration="1378000" />
     </task>
+    <task id="LOCAL-00001" summary="UPDATE">
+      <created>1580954238102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580954238102</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UPDATE" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE" />
   </component>
 </project>

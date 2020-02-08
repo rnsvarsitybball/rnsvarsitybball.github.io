@@ -1,6 +1,36 @@
 var game2019 = [
     {
         "type" :"footage",
+        "game_date":"FEB 8, 2020",
+        "game_num": "NPA Season 4 Montreal Session",
+        "game_team":"Thetford Prep, PQ",
+        "game_location":"Université du Québec à Montréal, PQ",
+        "game_pic":"images/GAME5.png",
+        "game_link":"https://youtu.be/nXIWcGuLHlo",
+        "game_score":"WIN/ 120-80"
+    },
+    {
+        "type" :"footage",
+        "game_date":"FEB 7, 2020",
+        "game_num": "NPA Season 4 Montreal Session",
+        "game_team":"Dynasty Sports Institute, PQ",
+        "game_location":"Université du Québec à Montréal, PQ",
+        "game_pic":"images/GAME5.png",
+        "game_link":"https://youtu.be/WM2EebQUn_Y",
+        "game_score":"WIN/ 80-87"
+    },
+    {
+        "type" :"footage",
+        "game_date":"FEB 6, 2020",
+        "game_num": "NPA Season 4 Montreal Session",
+        "game_team":"CANADA TOP FLIGHT ACADEMY, ON",
+        "game_location":"Université du Québec à Montréal, PQ",
+        "game_pic":"images/GAME5.png",
+        "game_link":"https://youtu.be/mS9sCZi-Lhk",
+        "game_score":"WIN/ 95-94"
+    },
+    {
+        "type" :"footage",
         "game_date":"FEB 1, 2020",
         "game_num": "2020 Dairy Town Classic",
         "game_team":"Bernice MacNaughton High School, NB",
