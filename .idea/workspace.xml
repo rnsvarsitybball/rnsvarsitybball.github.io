@@ -51,6 +51,7 @@
       <workItem from="1549569193136" duration="5000" />
       <workItem from="1550537320225" duration="10000" />
       <workItem from="1580952878279" duration="1378000" />
+      <workItem from="1597268899630" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE">
       <created>1580954238102</created>
@@ -70,7 +71,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
